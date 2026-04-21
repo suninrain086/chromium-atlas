@@ -1,0 +1,38 @@
+{
+  "roles": [
+    {
+      "role": "backend",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 0,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 58,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    },
+    {
+      "role": "frontend",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 0,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 60,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    }
+  ],
+  "totals": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  },
+  "verdict": "PASS",
+  "reason": "all roles LGTM or suggestions only",
+  "tierCoverage": null
+}

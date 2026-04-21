@@ -1,0 +1,16 @@
+{
+  "nodeId": "code-review",
+  "nodeType": "review",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Two independent reviewers (frontend + backend) both PASS. 0 critical, 0 warning, 13 green findings total. All in-scope ACs verified by code path. Bundle stays under budget (main 18.13/30, total 240.29/250 KB gz).",
+  "timestamp": "2026-04-21T22:27:00Z",
+  "artifacts": [
+    {"type":"eval","path":".harness/nodes/code-review/run_1/eval-frontend.md"},
+    {"type":"eval","path":".harness/nodes/code-review/run_1/eval-backend.md"},
+    {"type":"synthesis","path":".harness/nodes/code-review/run_1/synthesize.json"}
+  ],
+  "findings": {"critical": 0, "warning": 0, "suggestion": 13},
+  "metrics": null
+}

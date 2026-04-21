@@ -10,7 +10,7 @@
     "preview": "vite preview --port 4173 --strictPort",
     "scan": "tsx scripts/scan-docs.ts",
     "sync:real": "node scripts/sync-chromium.mjs && tsx scripts/scan-docs.ts --source real",
-    "test:build": "DOCS_DIR=test/fixtures/docs npm run build",
+    "test:build": "DOCS_DIR=test/fixtures/docs BASE_PATH=/ npm run build",
     "test": "npm run test:build && playwright test",
     "test:ui": "playwright test --ui",
     "check:budget": "node scripts/check-budget.mjs"

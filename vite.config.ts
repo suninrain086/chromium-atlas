@@ -44,7 +44,12 @@ function atlasScannerPlugin(): Plugin {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => {
+  // Allow override via env (CI sets BASE_PATH=/chromium-atlas/ for gh-pages subpath deploy).
+  // Dev server keeps "/" so http://localhost:3000/ works unchanged.
+  const base = process.env.BASE_PATH || (command === "build" ? "/chromium-atlas/" : "/");
+  return {
+  base,
   plugins: [
     atlasScannerPlugin(),
     VitePWA({
@@ -54,12 +59,13 @@ export default defineConfig({
         name: "chromium-atlas",
         short_name: "atlas",
         description: "Graph-aware browser for chromium docs",
-        start_url: "/",
+        start_url: base,
+        scope: base,
         display: "standalone",
         background_color: "#08090a",
         theme_color: "#7170ff",
         icons: [
-          { src: "/favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" },
+          { src: "favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" },
         ],
       },
       workbox: {
@@ -71,7 +77,7 @@ export default defineConfig({
             options: { cacheName: "atlas-json", expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 } },
           },
         ],
-        navigateFallback: "/index.html",
+        navigateFallback: base + "index.html",
       },
       devOptions: { enabled: false },
     }),
@@ -93,4 +99,5 @@ export default defineConfig({
       },
     },
   },
+  };
 });

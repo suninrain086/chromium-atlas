@@ -53,6 +53,8 @@ jobs:
 
       - name: Build site
         run: npx vite build
+        env:
+          BASE_PATH: /chromium-atlas/
 
       - name: Check bundle budget
         run: node scripts/check-budget.mjs

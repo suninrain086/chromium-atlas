@@ -1,0 +1,18 @@
+{
+  "nodeId": "acceptance",
+  "nodeType": "review",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "ITERATE",
+  "summary": "PM + Designer independently reviewed the v1.0 build against acceptance-criteria.md (delightful tier). 7/7 outcomes implemented; 2 yellow findings overlap (P1/D2 onboarding hint missing on first visit; D1 80ms view-mode fade missing per DESIGN.atlas.md §I) and 1 PM yellow on responsive test evidence gap. No critical findings, no XSS/security regressions noted. Suggesting a small polish patch (~30 LOC) closes the delightful-tier gaps before audit.",
+  "timestamp": "2026-04-21T18:38:00Z",
+  "artifacts": [
+    { "type": "eval", "role": "pm", "path": "run_1/eval-pm.md" },
+    { "type": "eval", "role": "designer", "path": "run_1/eval-designer.md" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 3,
+    "suggestion": 2
+  }
+}

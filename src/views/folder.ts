@@ -29,9 +29,21 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
 
   const mode = getViewMode(folderPath);
   const folderTitle = folderPath || "All docs";
+  const isHome = folderPath === "";
+  const showOnboarding = isHome && (() => {
+    try { return localStorage.getItem("atlas:onboarded") !== "1"; }
+    catch { return false; }
+  })();
 
   host.innerHTML = `
     <div class="main-inner" data-folder="${escapeHtml(folderPath)}" data-mode="${mode}">
+      ${showOnboarding ? `
+        <div class="onboarding-hint" role="note" data-onboarding>
+          <span>👋 Welcome to chromium-atlas.</span>
+          <span>Press <kbd>⌘K</kbd> (or <kbd>/</kbd>) to search · pick a folder on the left to start browsing.</span>
+          <span class="grow"></span>
+          <button class="dismiss" type="button" aria-label="Dismiss onboarding hint">✕</button>
+        </div>` : ``}
       <div class="view-header">
         <h1>${escapeHtml(folderTitle)}</h1>
         <div class="view-mode-toggle" role="tablist" aria-label="View mode">
@@ -46,6 +58,14 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
     </div>
   `;
 
+  if (showOnboarding) {
+    host.querySelector<HTMLButtonElement>("[data-onboarding] .dismiss")
+      ?.addEventListener("click", () => {
+        try { localStorage.setItem("atlas:onboarded", "1"); } catch { /* ignore quota */ }
+        host.querySelector("[data-onboarding]")?.remove();
+      });
+  }
+
   const content = host.querySelector<HTMLElement>(".folder-content")!;
   renderContent(content, node, mode);
 
@@ -59,7 +79,15 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
     host.querySelectorAll<HTMLButtonElement>(".view-mode-toggle button").forEach(b => {
       b.setAttribute("aria-pressed", b.dataset.mode === newMode ? "true" : "false");
     });
-    renderContent(content, node, newMode);
+    // 80ms fade between view modes (DESIGN.atlas.md §I).
+    // The CSS rule .folder-content.swapping{opacity:0} is gated by
+    // `prefers-reduced-motion` via the global * { transition:none !important }
+    // override at app.css:19-22, so this is a11y-safe.
+    content.classList.add("swapping");
+    requestAnimationFrame(() => {
+      renderContent(content, node, newMode);
+      requestAnimationFrame(() => content.classList.remove("swapping"));
+    });
     const ms = performance.now() - start;
     (window as any).__lastViewSwitchMs = ms;
   });

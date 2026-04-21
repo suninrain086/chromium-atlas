@@ -526,3 +526,60 @@ code, pre, .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, 
   .search-trigger { min-width: 0; padding: 5px 8px; }
   .search-trigger span:not(.kbd):not(.icon-search) { display: none; }
 }
+
+/* Extra-narrow phones (320px etc.) — drop the breadcrumb to keep the topbar
+   from horizontally scrolling. The route is still in the URL bar / palette. */
+@media (max-width: 480px) {
+  .topbar .breadcrumb { display: none; }
+  .topbar { gap: 6px; padding: 6px 10px; }
+  .main-inner { padding: 16px 12px 56px; }
+  .onboarding-hint { font-size: 12.5px; padding: 8px 10px; }
+}
+
+/* View-mode 80ms fade — paired with src/views/folder.ts swapping toggle.
+   Reduced-motion users get an instant swap via the global override at line 19. */
+.folder-content {
+  opacity: 1;
+  transition: opacity 80ms ease-out;
+}
+.folder-content.swapping { opacity: 0; }
+
+/* Onboarding hint strip — first-visit nudge on the home folder view. */
+.onboarding-hint {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  margin: 0 0 16px;
+  border: 1px solid var(--border, rgba(127,127,127,0.2));
+  border-radius: 8px;
+  background: var(--bg-2, rgba(127,127,127,0.04));
+  font-size: 13px;
+  color: var(--text-2);
+  animation: hint-in 220ms ease-out;
+}
+.onboarding-hint .grow { flex: 1; }
+.onboarding-hint kbd {
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid var(--border, rgba(127,127,127,0.25));
+  border-radius: 4px;
+  background: var(--bg-1, transparent);
+}
+.onboarding-hint button.dismiss {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--text-3);
+  cursor: pointer;
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1;
+}
+.onboarding-hint button.dismiss:hover { background: var(--bg-3, rgba(127,127,127,0.1)); color: var(--text-1); }
+@keyframes hint-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

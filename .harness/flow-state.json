@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "gate-test",
+  "currentNode": "acceptance",
   "entryNode": "discuss",
   "tier": "delightful",
-  "totalSteps": 5,
+  "totalSteps": 6,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -33,6 +33,11 @@
       "nodeId": "gate-test",
       "runId": "run_1",
       "timestamp": "2026-04-21T09:50:14.047Z"
+    },
+    {
+      "nodeId": "acceptance",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T10:34:03.726Z"
     }
   ],
   "edgeCounts": {
@@ -40,10 +45,11 @@
     "build→code-review": 1,
     "code-review→test-design": 1,
     "test-design→test-execute": 1,
-    "test-execute→gate-test": 1
+    "test-execute→gate-test": 1,
+    "gate-test→acceptance": 1
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T09:50:14.047Z",
+  "_last_modified": "2026-04-21T10:34:03.726Z",
   "_write_nonce": "cd7a08858d14868d"
 }

@@ -1,0 +1,20 @@
+{
+  "nodeId": "gate-final",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Final gate aggregating 12 upstream nodes: 0\ud83d\udd34 0\ud83d\udfe1 25\ud83d\udfe2. v1.0 'visible slice' shipped: sidebar + 3 view modes + Cmd+K + theme + doc detail + permalinks + mobile responsive. 17/17 Playwright green. Bundle 16.26 KB gz main / 200 KB budget. Suggestions parked in v1.0.1 backlog (graph view, PWA, real chromium sync).",
+  "timestamp": "2026-04-21T12:18:31Z",
+  "artifacts": [
+    {
+      "type": "gate-decision",
+      "path": "run_1/decision.md"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 25
+  }
+}

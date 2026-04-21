@@ -1,0 +1,14 @@
+{
+  "nodeId": "test-design",
+  "nodeType": "design",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "7 new tests planned in test/e2e/v102.spec.ts: 3 Playwright (sync-health gating: absent/fresh/stale) + 4 static (actionlint, README grep×2, scan --source mock equivalence). Maps 1:1 to in-scope ACs (5,6,7,8,9,10,12). AC-11 satisfied by 26/26 regression remaining green.",
+  "timestamp": "2026-04-21T22:28:00Z",
+  "artifacts": [
+    {"type":"decision","path":".harness/nodes/test-design/run_1/decision.md"}
+  ],
+  "findings": null,
+  "metrics": null
+}

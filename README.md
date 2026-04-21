@@ -29,7 +29,8 @@ See [`THIRD-PARTY.md`](./THIRD-PARTY.md) for the full dependency list with licen
 
 ## Roadmap (not yet shipped)
 
-- **v1.0.2:** Real chromium docs sync (sparse clone of `chromium/src`, GitHub Actions hourly cron, Cloudflare R2 hosting)
+- **v1.0.2 (current):** Real chromium docs sync — sparse clone of `chromium/src` + GitHub Actions hourly cron + GitHub Pages deploy. (Cloudflare R2 hosting deferred to v1.0.3.)
+- **v1.0.3 (planned):** Cloudflare R2 hosting + tighter clone filter (`--filter=tree:0` to shrink `.cache/chromium/.git/` below 30 MB).
 - **v1.1:** Supabase backend (Auth · Postgres · Realtime · Edge Functions); OAuth (GitHub/Google/Apple/Microsoft); pin (max 20); favorite; tags; like; follow; in-app + email notifications; frequent-docs view (exponential decay, half-life 28d)
 - **v2+:** Comments · AI Q&A · Mermaid · link-health report · RSS
 

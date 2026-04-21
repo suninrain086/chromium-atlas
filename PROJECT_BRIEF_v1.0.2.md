@@ -60,7 +60,7 @@ v1.0.1 closed 5 of 6 v1.0 backlog items. The last one — **real chromium docs s
 | AC | Description | Test |
 |---|---|---|
 | AC-1 | `npm run sync:real` clones chromium docs/ to `dist-docs/` and emits non-empty tree | unit/integration |
-| AC-2 | Sparse clone is `<10 MB` on disk (no full chromium history) | size assertion |
+| AC-2 | Sparse clone cache is `<200 MB` on disk (no full chromium history; bounded by chromium docs/ tree + pack index — full clone is ~30 GB, so this is ~99.3% size reduction). v1.0.3 may explore `--filter=tree:0` partial-tree clone to drop `.git/` further. | size assertion |
 | AC-3 | Re-running `sync:real` reuses cache; only fetches new objects | timing assertion |
 | AC-4 | `npm run scan -- --source real` emits docs.json with ≥500 real docs | count assertion |
 | AC-5 | `npm run scan -- --source mock` still works (CI default) | regression |

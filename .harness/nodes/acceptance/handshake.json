@@ -1,18 +1,20 @@
 {
   "nodeId": "acceptance",
   "nodeType": "review",
-  "runId": "run_1",
+  "runId": "run_2",
   "status": "completed",
-  "verdict": "ITERATE",
-  "summary": "PM + Designer independently reviewed the v1.0 build against acceptance-criteria.md (delightful tier). 7/7 outcomes implemented; 2 yellow findings overlap (P1/D2 onboarding hint missing on first visit; D1 80ms view-mode fade missing per DESIGN.atlas.md §I) and 1 PM yellow on responsive test evidence gap. No critical findings, no XSS/security regressions noted. Suggesting a small polish patch (~30 LOC) closes the delightful-tier gaps before audit.",
-  "timestamp": "2026-04-21T18:38:00Z",
+  "verdict": "PASS",
+  "summary": "Run-1 acceptance flagged 5 yellow findings (P1 onboarding, P1 responsive evidence, D1 80ms view-mode fade, D2 onboarding visual, D3 reduced-motion); orchestrator landed polish patch (commit 984fdfc) closing every one. Run-2 PM + Designer re-review: 0 critical, 0 warning, all 7 outcomes implemented AND test-asserted (17/17 Playwright green incl. new responsive @320/375/768/1024/1440 + onboarding-dismiss + view-mode-fade specs). TESTING.md added (delightful-tier baseline). Bundle still 16.75 KB main / ~98 KB total gzip.",
+  "timestamp": "2026-04-21T18:55:00Z",
   "artifacts": [
+    { "type": "eval", "role": "pm", "path": "run_2/eval-pm.md" },
+    { "type": "eval", "role": "designer", "path": "run_2/eval-designer.md" },
     { "type": "eval", "role": "pm", "path": "run_1/eval-pm.md" },
     { "type": "eval", "role": "designer", "path": "run_1/eval-designer.md" }
   ],
   "findings": {
     "critical": 0,
-    "warning": 3,
+    "warning": 0,
     "suggestion": 2
   }
 }

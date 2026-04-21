@@ -6,3 +6,4 @@
 2026-04-21T22:58:00Z audit PASS — 3 reviewers clean, 7 v1.0.3 hardening suggestions (S1/S2 git+workflow injection, C1 chromium LICENSE attribution, A1 aria-live)
 2026-04-21T22:59:00Z gate-audit PASS — all 3 audit reviewers clean, batch-2 halt before e2e-user
 2026-04-21T14:55:08Z gate-e2e PASS — 3 personas, 34/35 backing, 4 v1.0.3 suggestions
+2026-04-21T14:58:30Z post-launch-sim PASS — 5 probes incl. sync warm-cache 24.85s for 694 chromium docs

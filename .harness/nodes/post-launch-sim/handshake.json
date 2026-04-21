@@ -1,0 +1,35 @@
+{
+  "nodeId": "post-launch-sim",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "5 forward probes: scanner @10x docs (387ms), link integrity (0/0 broken), bundle (main 18.02/30 KB, total 226.24/250 KB), smoke (33/35 pass), sync warm-cache (24.85s for 694 docs). All PASS.",
+  "timestamp": "2026-04-21T14:58:30Z",
+  "artifacts": [
+    {
+      "type": "eval",
+      "role": "forward-sim",
+      "path": "run_1/eval-post-launch.md"
+    },
+    {
+      "type": "test-result",
+      "path": "run_1/transcript.txt"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  },
+  "tierCoverage": {
+    "covered": [
+      "scaling",
+      "link-integrity",
+      "bundle-drift",
+      "smoke-regression",
+      "sync-warm-cache"
+    ],
+    "skipped": []
+  }
+}

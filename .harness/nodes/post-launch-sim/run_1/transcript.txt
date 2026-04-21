@@ -1,0 +1,61 @@
+post-launch-sim run_1 — v1.0.2 forward probes
+============================================================
+
+{
+  "scaling_10x": {
+    "files": 6910,
+    "scan_ms": 387,
+    "exit": 0
+  },
+  "link_rot": {
+    "total": 0,
+    "broken": 0,
+    "pct": 0.0
+  },
+  "bundle": {
+    "main_gz": 18.02,
+    "main_budget": 30,
+    "main_headroom_pct": 39.9,
+    "cyto_lazy_gz": 137.64,
+    "total_gz": 226.24,
+    "total_budget": 250,
+    "total_headroom_pct": 9.5
+  },
+  "smoke": {
+    "passed": 33,
+    "failed": 2,
+    "duration_s": 20.3
+  },
+  "sync_warm": {
+    "warm_clone_s": 24.85,
+    "docs": 694,
+    "exit": 0
+  },
+  "risks": [
+    {
+      "horizon": "30d",
+      "risk": "chromium docs/ tree growth pushes cache beyond AC-2 revised <200 MB",
+      "mitigation": "v1.0.3 should add --filter=tree:0 partial-tree clone"
+    },
+    {
+      "horizon": "30d",
+      "risk": "GitHub Pages bandwidth limit hit (1 GB/day)",
+      "mitigation": "v1.0.3 R2 swap will resolve; 700 docs * ~10 KB = 7 MB per visit, plenty of headroom"
+    },
+    {
+      "horizon": "60d",
+      "risk": "chromium renames a doc \u2192 mock bookmarks 404",
+      "mitigation": "v1.0.3: rename redirect map emitted by sync script"
+    },
+    {
+      "horizon": "60d",
+      "risk": "sync-docs cron silently fails for days",
+      "mitigation": "v1.0.3: workflow failure \u2192 GitHub issue (already in audit suggestions)"
+    },
+    {
+      "horizon": "90d",
+      "risk": "chromium adds binary assets (PDFs, large images) to docs/ ballooning size",
+      "mitigation": "sync script could filter to .md only (currently mirrors everything in docs/)"
+    }
+  ]
+}

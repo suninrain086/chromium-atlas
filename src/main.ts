@@ -149,7 +149,13 @@ async function boot() {
     expandToCurrent();
     refreshSidebar();
     document.title = "Graph · chromium-atlas";
-    view.innerHTML = `<div class="main-inner"><div class="empty-state"><p>Loading graph…</p></div></div>`;
+    view.innerHTML = `<div class="main-inner">
+      <div class="view-header"><h1>Graph</h1><div class="meta">Loading graph…</div></div>
+      <div class="graph-loading" role="status" aria-live="polite" aria-label="Loading graph view"
+           style="width:100%;height:calc(100vh - 160px);min-height:480px;background:var(--panel,var(--surface,#0f1011));border:1px solid var(--border-solid,var(--border));border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--text-dim,#888);font-size:14px;">
+        <span>Loading graph view…</span>
+      </div>
+    </div>`;
     try {
       const mod = await import("./views/graph");
       // Detect "current doc" if user came from a doc page (stored in sessionStorage by router transitions)

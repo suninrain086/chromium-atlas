@@ -13,8 +13,11 @@ are used at runtime or build time. All are open-source and license-compatible.
 | highlight.js | ^11.10 | BSD-3-Clause | https://github.com/highlightjs/highlight.js |
 | @fontsource-variable/inter | ^5.1 | OFL-1.1 | https://fontsource.org/fonts/inter |
 | @fontsource/jetbrains-mono | ^5.1 | OFL-1.1 | https://fontsource.org/fonts/jetbrains-mono |
-| cytoscape | ^3.30 | MIT | https://github.com/cytoscape/cytoscape.js |
-| cytoscape-fcose | ^2.2 | MIT | https://github.com/iVis-at-Bilkent/cytoscape.js-fcose |
+| cytoscape | ^3.33 | MIT | https://github.com/cytoscape/cytoscape.js |
+
+> v1.0.1 note: we use Cytoscape's built-in `cose` layout; the
+> `cytoscape-fcose` plugin was evaluated and dropped to keep the lazy
+> graph chunk under the 250 KB total bundle ceiling.
 
 ## Build / dev
 

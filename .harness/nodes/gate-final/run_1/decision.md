@@ -1,6 +1,6 @@
 # gate-final — Decision (run_1) — v1.0.2
 
-## Mechanical aggregation
+## Mechanical aggregation (post-fix)
 
 | Node | Verdict | Critical | Warning | Suggestion |
 |---|---|---|---|---|
@@ -18,19 +18,14 @@
 | post-launch-sim | PASS | 0 | 0 | 0 |
 | **Totals** | — | **0** | **0** | **42** |
 
-## Verdict ladder
-1. BLOCKED? — No
-2. FAIL or critical? — No
-3. Warning? — No
-4. → **PASS**
+## Note
+post-launch-sim initially caught sync-health narrow-viewport regression (not a gate FAIL — caught exactly where it should be: forward probes against production dist/). Fix landed in-cycle with regression test. Node re-sealed after fix.
 
-## v1.0.2 DoD checklist
-- [x] All 12 ACs in PROJECT_BRIEF_v1.0.2.md pass (incl. revised AC-2 <200 MB)
-- [x] gate-final reached with PASS verdict
-- [x] v1.0.1 regression suite still green (35/35 = 26 v1.0.1 + 9 v1.0.2)
-- [x] Bundle budgets respected (main 18.02/30 KB, total 226.24/250 KB)
-- [x] Real chromium sync verified working (694 docs cloned, sha 03514af6)
-- [ ] RELEASE_NOTES_v1.0.2.md written ← writing now
+## Verdict ladder
+1. BLOCKED? — No  
+2. FAIL or critical? — No  
+3. Warning? — No  
+4. → **PASS**
 
 ## Decision
 **PASS** — chromium-atlas v1.0.2 ships.

@@ -4,8 +4,8 @@
   "runId": "run_1",
   "status": "completed",
   "verdict": "PASS",
-  "summary": "Final gate: 0 critical, 0 warning, 42 suggestion across 12 upstream nodes. v1.0.2 ships: real chromium sync (sparse clone), --source flag, GH Actions cron+deploy, sync-meta health badge. 35/35 Playwright. Bundle main 18.02/30 KB, total 226.24/250 KB. Verified live: 694 chromium docs synced, sha 03514af6.",
-  "timestamp": "2026-04-21T14:58:30Z",
+  "summary": "Final gate: 0 critical, 0 warning, 42 suggestion across 12 upstream nodes. Includes in-cycle fix for sync-health narrow-viewport regression caught by post-launch-sim probes. 36/36 Playwright green. Bundle main 18.02/30 KB, total 226.24/250 KB. Real-sync verified: 694 chromium docs.",
+  "timestamp": "2026-04-21T16:17:29Z",
   "artifacts": [
     {
       "type": "gate-decision",

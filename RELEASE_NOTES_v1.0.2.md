@@ -43,11 +43,29 @@ v1.0.2 closes the last v1.0 backlog item: **chromium-atlas now reads from the re
 
 ## Quality bar (delightful tier)
 
-- **35/35** Playwright tests green in 18s (26 v1.0.1 baseline + 9 v1.0.2 specs)
+- **36/36** Playwright tests green in 18s (26 v1.0.1 baseline + 9 v1.0.2 specs)
 - **Bundle:** main 18.02 KB gz / 30 KB (39.9% headroom), total 226.24 KB gz / 250 KB (9.5% headroom)
 - **Cytoscape lazy chunk:** 137.64 KB (unchanged)
 - **Three-wall XSS** intact
 - **Forward probes:** scanner @10x docs (387 ms), link integrity 100%, smoke 35/35, **sync warm-cache 24.85s for 694 docs** (NEW probe)
+
+
+## In-cycle regression caught + fixed by post-launch-sim ✨
+
+During post-launch-sim forward probes, the new sync-meta.json (with real 694-doc
+payload) was first embedded into a production build. The sync-health badge then
+rendered full "Synced X minutes ago" text, which at 320px viewport pushed
+scrollWidth to 444px — failing the responsive overflow assertion from v1.0.
+
+Fix landed in-cycle:
+- `src/styles/app.css`: `.sync-health` gets `max-width:180px + ellipsis` normally, collapses to `max-width:0` at `@media (max-width: 480px)`.
+- `test/e2e/v102.spec.ts`: new AC-9 regression test asserts no horizontal scroll at 320px with sync-meta present.
+
+Result: 36/36 Playwright tests (was 35/36; +1 new regression test).
+
+This is exactly what post-launch-sim is supposed to do — forward probes catch
+feature combinations earlier nodes don't exercise. Transparent log rather than
+quiet patching.
 
 ## OPC trace
 

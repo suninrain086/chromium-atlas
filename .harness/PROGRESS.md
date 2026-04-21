@@ -4,3 +4,4 @@
 2026-04-21T22:50:00Z acceptance run_2 PASS — all run_1 yellows closed, 12/12 ACs green
 2026-04-21T22:51:00Z gate-acceptance PASS — acceptance run_2 clean
 2026-04-21T22:58:00Z audit PASS — 3 reviewers clean, 7 v1.0.3 hardening suggestions (S1/S2 git+workflow injection, C1 chromium LICENSE attribution, A1 aria-live)
+2026-04-21T22:59:00Z gate-audit PASS — all 3 audit reviewers clean, batch-2 halt before e2e-user

@@ -2,3 +2,4 @@
 2026-04-21T12:58:27Z gate-acceptance PASS (run_2 after polish patch 9ff5bcf closed 3 run_1 yellows)
 2026-04-21T12:59:38Z gate-audit PASS (security+compliance+a11y clean; 2 v1.0.2 suggestions)
 2026-04-21T13:01:34Z gate-e2e PASS — 3 personas, 26/26 backing, 14/14 raw (F5 persona-harness fix worked)
+2026-04-21T13:03:34Z post-launch-sim PASS — 4 probes: 10x scan 423ms, 0% link rot, main 41.1% / total 9.6% headroom, 26/26 smoke

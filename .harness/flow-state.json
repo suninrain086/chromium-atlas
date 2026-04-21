@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "gate-e2e",
+  "currentNode": "post-launch-sim",
   "entryNode": "discuss",
   "tier": null,
-  "totalSteps": 11,
+  "totalSteps": 12,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -63,6 +63,11 @@
       "nodeId": "gate-e2e",
       "runId": "run_1",
       "timestamp": "2026-04-21T13:01:34Z"
+    },
+    {
+      "nodeId": "post-launch-sim",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:03:34Z"
     }
   ],
   "edgeCounts": {
@@ -74,6 +79,6 @@
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T13:01:34Z",
+  "_last_modified": "2026-04-21T13:03:34Z",
   "_write_nonce": "567b15c0874691fa"
 }

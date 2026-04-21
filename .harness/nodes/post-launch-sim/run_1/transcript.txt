@@ -1,0 +1,51 @@
+post-launch-sim run_1 — v1.0.1 forward probes
+============================================================
+
+{
+  "scaling_10x": {
+    "files": 6910,
+    "scan_ms": 423,
+    "exit": 0
+  },
+  "link_rot": {
+    "total": 0,
+    "broken": 0,
+    "pct": 0.0
+  },
+  "bundle_drift": {
+    "main_gz_kb": 17.66,
+    "main_budget_kb": 30,
+    "main_headroom_pct": 41.1,
+    "cyto_lazy_gz_kb": 137.64,
+    "total_js_gz_kb": 225.88,
+    "total_budget_kb": 250,
+    "total_headroom_pct": 9.6
+  },
+  "smoke_replay": {
+    "passed": 26,
+    "failed": 0,
+    "duration_s": 16.7
+  },
+  "risk_register": [
+    {
+      "horizon": "30d",
+      "risk": "Cytoscape 4.x major bump or layout regression",
+      "mitigation": "lazy chunk isolated; pin in package-lock; smoke includes graph render assertion (v101.spec.ts:80)"
+    },
+    {
+      "horizon": "60d",
+      "risk": "Service worker stale cache after deploy",
+      "mitigation": "vite-plugin-pwa autoUpdate + per-build hash; churned-user persona scenario covers this"
+    },
+    {
+      "horizon": "60d",
+      "risk": "Real chromium docs/ tree growth pushes link.json over reasonable size",
+      "mitigation": "v1.0.2 sync pipeline must enforce per-doc link cap or paginate; current scanner O(N) handles 6910 files in 472ms"
+    },
+    {
+      "horizon": "90d",
+      "risk": "Total bundle creep when v1.0.2 sync adds GH Actions tooling",
+      "mitigation": "sync runs server-side via Action, not in client bundle; keep total JS \u2264 250 KB by treating CI tools as separate workspace"
+    }
+  ]
+}

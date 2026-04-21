@@ -1,0 +1,34 @@
+{
+  "nodeId": "post-launch-sim",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Four forward probes: scanner @10x docs (423ms), link integrity (0/0 broken), bundle drift (main 17.66/30 KB = 41.1% headroom, total 225.88/250 KB = 9.6% headroom; cyto-lazy 137.64 KB), smoke regression (26/26 pass in 16.7s). All PASS. 30/60/90-day risk register filed.",
+  "timestamp": "2026-04-21T13:03:34Z",
+  "artifacts": [
+    {
+      "type": "eval",
+      "role": "forward-sim",
+      "path": "run_1/eval-post-launch.md"
+    },
+    {
+      "type": "test-result",
+      "path": "run_1/transcript.txt"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  },
+  "tierCoverage": {
+    "covered": [
+      "scaling",
+      "link-integrity",
+      "bundle-drift",
+      "smoke-regression"
+    ],
+    "skipped": []
+  }
+}

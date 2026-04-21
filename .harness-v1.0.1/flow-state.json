@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "flowTemplate": "full-stack",
+  "currentNode": "gate-final",
+  "entryNode": "discuss",
+  "tier": null,
+  "totalSteps": 13,
+  "maxTotalSteps": 35,
+  "maxLoopsPerEdge": 3,
+  "maxNodeReentry": 5,
+  "history": [
+    {
+      "nodeId": "build",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:35:10.939Z"
+    },
+    {
+      "nodeId": "code-review",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:41:51.615Z"
+    },
+    {
+      "nodeId": "test-design",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:45:18.155Z"
+    },
+    {
+      "nodeId": "test-execute",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:47:07.711Z"
+    },
+    {
+      "nodeId": "gate-test",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:48:21.653Z"
+    },
+    {
+      "nodeId": "acceptance",
+      "runId": "run_2",
+      "timestamp": "2026-04-21T12:58:27Z"
+    },
+    {
+      "nodeId": "gate-acceptance",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:58:27Z"
+    },
+    {
+      "nodeId": "audit",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:59:38Z"
+    },
+    {
+      "nodeId": "gate-audit",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T12:59:38Z"
+    },
+    {
+      "nodeId": "e2e-user",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:01:34Z"
+    },
+    {
+      "nodeId": "gate-e2e",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:01:34Z"
+    },
+    {
+      "nodeId": "post-launch-sim",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:03:34Z"
+    },
+    {
+      "nodeId": "gate-final",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:03:34Z"
+    }
+  ],
+  "edgeCounts": {
+    "discuss\u2192build": 1,
+    "build\u2192code-review": 1,
+    "code-review\u2192test-design": 1,
+    "test-design\u2192test-execute": 1,
+    "test-execute\u2192gate-test": 1
+  },
+  "bypassMode": null,
+  "_written_by": "opc-harness",
+  "_last_modified": "2026-04-21T13:03:34Z",
+  "_write_nonce": "567b15c0874691fa"
+}

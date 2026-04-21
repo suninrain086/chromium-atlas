@@ -583,3 +583,24 @@ code, pre, .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, 
   from { opacity: 0; transform: translateY(-4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* v1.0.1 — A11y hit area: ensure all toggles meet 44x44px on mobile */
+@media (max-width: 768px) {
+  .theme-toggle, .view-mode-toggle button, #hamburger, #install-btn, .search-trigger {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+.install-btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 510;
+  cursor: pointer;
+}
+.install-btn[hidden] { display: none; }
+
+.graph-cy { position: relative; }

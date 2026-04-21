@@ -46,9 +46,9 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
         </div>` : ``}
       <div class="view-header">
         <h1>${escapeHtml(folderTitle)}</h1>
-        <div class="view-mode-toggle" role="tablist" aria-label="View mode">
+        <div class="view-mode-toggle" role="radiogroup" aria-label="View mode">
           ${(["title-list", "list", "gallery"] as ViewMode[]).map(m => `
-            <button data-mode="${m}" aria-pressed="${m === mode}" aria-label="${VIEW_LABELS[m]} view" title="${VIEW_LABELS[m]}">
+            <button data-mode="${m}" role="radio" aria-checked="${m === mode}" aria-pressed="${m === mode}" tabindex="${m === mode ? 0 : -1}" aria-label="${VIEW_LABELS[m]} view" title="${VIEW_LABELS[m]}">
               ${ICONS[m]}
             </button>
           `).join("")}
@@ -77,7 +77,10 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
     setViewMode(folderPath, newMode);
     host.querySelector<HTMLElement>(".main-inner")!.dataset.mode = newMode;
     host.querySelectorAll<HTMLButtonElement>(".view-mode-toggle button").forEach(b => {
-      b.setAttribute("aria-pressed", b.dataset.mode === newMode ? "true" : "false");
+      const isActive = b.dataset.mode === newMode;
+      b.setAttribute("aria-pressed", isActive ? "true" : "false");
+      b.setAttribute("aria-checked", isActive ? "true" : "false");
+      b.setAttribute("tabindex", isActive ? "0" : "-1");
     });
     // 80ms fade between view modes (DESIGN.atlas.md §I).
     // The CSS rule .folder-content.swapping{opacity:0} is gated by
@@ -90,6 +93,23 @@ export function renderFolderView(host: HTMLElement, folderPath: string) {
     });
     const ms = performance.now() - start;
     (window as any).__lastViewSwitchMs = ms;
+  });
+
+  host.querySelector(".view-mode-toggle")!.addEventListener("keydown", (e) => {
+    const ke = e as KeyboardEvent;
+    if (ke.key !== "ArrowLeft" && ke.key !== "ArrowRight" && ke.key !== "Home" && ke.key !== "End") return;
+    const btns = Array.from(host.querySelectorAll<HTMLButtonElement>(".view-mode-toggle button"));
+    const cur = btns.findIndex(b => b === document.activeElement);
+    let next = cur;
+    if (ke.key === "ArrowLeft") next = (cur - 1 + btns.length) % btns.length;
+    else if (ke.key === "ArrowRight") next = (cur + 1) % btns.length;
+    else if (ke.key === "Home") next = 0;
+    else if (ke.key === "End") next = btns.length - 1;
+    if (next !== cur && next >= 0) {
+      ke.preventDefault();
+      btns[next].focus();
+      btns[next].click();
+    }
   });
 }
 

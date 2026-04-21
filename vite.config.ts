@@ -2,6 +2,7 @@ import { defineConfig, type Plugin } from "vite";
 import { resolve } from "node:path";
 import { existsSync, watch } from "node:fs";
 import { writeAllIndexes, resolveDocsDir } from "./scripts/scan-docs";
+import { VitePWA } from "vite-plugin-pwa";
 
 function atlasScannerPlugin(): Plugin {
   let dir = resolveDocsDir();
@@ -44,7 +45,37 @@ function atlasScannerPlugin(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [atlasScannerPlugin()],
+  plugins: [
+    atlasScannerPlugin(),
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.svg"],
+      manifest: {
+        name: "chromium-atlas",
+        short_name: "atlas",
+        description: "Graph-aware browser for chromium docs",
+        start_url: "/",
+        display: "standalone",
+        background_color: "#08090a",
+        theme_color: "#7170ff",
+        icons: [
+          { src: "/favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" },
+        ],
+      },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,svg,woff2}"],
+        runtimeCaching: [
+          {
+            urlPattern: /\/(docs|tree|links)\.json/,
+            handler: "StaleWhileRevalidate",
+            options: { cacheName: "atlas-json", expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 } },
+          },
+        ],
+        navigateFallback: "/index.html",
+      },
+      devOptions: { enabled: false },
+    }),
+  ],
   server: { port: 3000, strictPort: false },
   build: {
     outDir: "dist",
@@ -57,6 +88,7 @@ export default defineConfig({
           markdown: ["markdown-it", "dompurify"],
           fuse: ["fuse.js"],
           "hljs-core": ["highlight.js/lib/core"],
+          cyto: ["cytoscape"],
         },
       },
     },

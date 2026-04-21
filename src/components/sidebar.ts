@@ -82,6 +82,12 @@ function render(host: HTMLElement) {
       <span class="icon">${FOLDER_ICON}</span>
       <span class="label">All docs</span>
     </a>
+    <a href="#/graph" class="node" data-type="graph" data-path="__graph__" data-depth="0"
+       style="--depth:0" ${location.hash.startsWith("#/graph") ? 'aria-current="page"' : ""}>
+      <span class="chev"></span>
+      <span class="icon">${DOC_ICON}</span>
+      <span class="label">Graph</span>
+    </a>
     <div class="tree" role="tree">
   `);
 

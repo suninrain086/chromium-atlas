@@ -7,6 +7,7 @@ import { mountThemeToggle } from "./components/theme-toggle";
 import { openPalette, closePalette, isPaletteOpen, refreshFuseIndex } from "./components/palette";
 import { renderFolderView } from "./views/folder";
 import { renderDocView } from "./views/doc";
+import { mountInstallButton } from "./components/install-button";
 import { ancestorFolders, parentFolder } from "./lib/paths";
 
 const app = document.getElementById("app") as HTMLElement;
@@ -38,12 +39,14 @@ function renderShell() {
         <span class="kbd">⌘K</span>
       </button>
       <div id="theme-host"></div>
+      <div id="install-host"></div>
     </header>
     <main class="main" id="view"></main>
     <div class="backdrop" id="backdrop"></div>
   `;
   mountSidebar(document.querySelector(".sidebar") as HTMLElement);
   mountThemeToggle(document.getElementById("theme-host")!);
+  mountInstallButton(document.getElementById("install-host")!);
   document.getElementById("open-palette")!.addEventListener("click", () => openPalette());
   document.getElementById("hamburger")!.addEventListener("click", () => setDrawerOpen(!isDrawerOpen()));
   document.getElementById("backdrop")!.addEventListener("click", () => setDrawerOpen(false));
@@ -139,6 +142,23 @@ async function boot() {
     expandToCurrent();
     refreshSidebar();
     renderDocView(view, params.path, params.__anchor);
+    renderBreadcrumb();
+  });
+
+  route("/graph", async () => {
+    expandToCurrent();
+    refreshSidebar();
+    document.title = "Graph · chromium-atlas";
+    view.innerHTML = `<div class="main-inner"><div class="empty-state"><p>Loading graph…</p></div></div>`;
+    try {
+      const mod = await import("./views/graph");
+      // Detect "current doc" if user came from a doc page (stored in sessionStorage by router transitions)
+      let cur: string | undefined;
+      try { cur = sessionStorage.getItem("atlas:lastDoc") || undefined; } catch {}
+      mod.renderGraphView(view, cur);
+    } catch (e) {
+      view.innerHTML = `<div class="main-inner"><div class="error-state"><h2>Graph failed to load</h2><p>${escapeHtml((e as Error).message)}</p></div></div>`;
+    }
     renderBreadcrumb();
   });
 

@@ -38,6 +38,7 @@ export function openPalette() {
       <input id="palette-input" type="text" placeholder="Search docs by title or path…"
              autocomplete="off" spellcheck="false" aria-label="Search" />
       <div class="results" id="palette-results" role="listbox"></div>
+      <div id="palette-count" class="palette-count" role="status" aria-live="polite" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"></div>
       <div class="footer">
         <span><span class="kbd">↑↓</span> navigate</span>
         <span><span class="kbd">↵</span> open</span>
@@ -116,6 +117,8 @@ export function closePalette() {
 }
 
 function renderResults(host: HTMLElement) {
+  const countEl = document.getElementById("palette-count");
+  if (countEl) countEl.textContent = `${results.length} result${results.length === 1 ? "" : "s"}`;
   if (results.length === 0) {
     host.innerHTML = `<div class="empty">No matching docs. Try a different query.</div>`;
     return;

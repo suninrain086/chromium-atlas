@@ -6,7 +6,8 @@ const MOON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 export function mountThemeToggle(host: HTMLElement) {
   const update = () => {
     const t = getTheme();
-    host.innerHTML = `<button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">${t === "dark" ? SUN : MOON}</button>`;
+    const isDark = t === "dark";
+    host.innerHTML = `<button class="theme-toggle" aria-label="Toggle theme" aria-pressed="${isDark}" title="Toggle theme">${isDark ? SUN : MOON}</button>`;
   };
   update();
   host.addEventListener("click", () => {

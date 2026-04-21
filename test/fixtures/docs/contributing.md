@@ -1,11 +1,28 @@
-# Contributing to chromium
+# Contributing
 
-How to send your first patch to chromium — the contributor agreement, gerrit, and the review process.
+This document covers **Contributing** within the Chromium codebase. It lives under `docs/root` and is part of the broader Chromium contributor documentation set.
 
-## CLA
+Use this page as a starting point. For deeper coverage, see the linked references below or browse the surrounding `root/` folder.
 
-Notes for cla are still being expanded; this is a placeholder paragraph used by the chromium-atlas mock fixture set so that the title-list view always has descriptive copy to render.
+## Overview
 
-## Sending a patch
+Contributing is concerned with the design, implementation, and operational characteristics of the relevant subsystem. The text on this page is a placeholder for the v1.0 mock fixture build of chromium-atlas.
 
-Use `git cl upload`. See the [build overview](build/overview.md) first.
+## Getting started
+
+Before diving in, ensure your checkout is up to date and that you have read the README under the same folder. The mock fixture intentionally keeps the structure realistic while the prose is generic.
+
+## Example
+
+```cpp
+#include "base/logging.h"
+
+void DoTheThing() {
+  LOG(INFO) << "hello";
+}
+```
+
+## See also
+
+- [Readme](/imported/readme.md)
+- [Web Platform Security Questionnaire](/security/web-platform-security-questionnaire.md)

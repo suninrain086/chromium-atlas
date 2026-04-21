@@ -9,7 +9,7 @@ test.describe("smoke — chromium-atlas v1.0", () => {
   });
 
   test("doc route renders markdown + TOC + back-links section", async ({ page }) => {
-    await page.goto("/#/doc/design/site-isolation.md");
+    await page.goto("/#/doc/design/sandbox.md");
     // Doc body shows the title heading
     await expect(page.locator(".doc-body h1, .doc-body h2").first()).toBeVisible();
     // TOC sidebar present

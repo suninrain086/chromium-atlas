@@ -1,11 +1,31 @@
 # Threading
 
-Chromium's threading model — sequences, task runners, and the rules around blocking.
+This document covers **Threading** within the Chromium codebase. It lives under `docs/design` and is part of the broader Chromium contributor documentation set.
 
-## Sequences
+Use this page as a starting point. For deeper coverage, see the linked references below or browse the surrounding `design/` folder.
 
-Notes for sequences are still being expanded; this is a placeholder paragraph used by the chromium-atlas mock fixture set so that the title-list view always has descriptive copy to render.
+## Overview
 
-### Task runners
+Threading is concerned with the design, implementation, and operational characteristics of the relevant subsystem. The text on this page is a placeholder for the v1.0 mock fixture build of chromium-atlas.
 
-Notes for task runners are still being expanded; this is a placeholder paragraph used by the chromium-atlas mock fixture set so that the title-list view always has descriptive copy to render.
+## Getting started
+
+Before diving in, ensure your checkout is up to date and that you have read the README under the same folder. The mock fixture intentionally keeps the structure realistic while the prose is generic.
+
+## Implementation notes
+
+Implementation details for Threading are intentionally elided in this mock. Real content will be sourced from the chromium/src `docs/` tree once the v1.0.1 sync pipeline is wired.
+
+## Example
+
+```sh
+gn gen out/Default --args='is_debug=false'
+autoninja -C out/Default chrome
+```
+
+## See also
+
+- [Ios Infra](/ios_infra.md)
+- [How To Repro Bot Failures](/testing/how_to_repro_bot_failures.md)
+- [Win Cross](/win_cross.md)
+- [Flavors Of Chrome](/mac/flavors_of_chrome.md)

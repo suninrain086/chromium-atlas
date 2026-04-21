@@ -1,15 +1,30 @@
-# Debugging chromium on Linux
+# Debugging
 
-Tips for using gdb / lldb / rr against chromium browser tests.
+This document covers **Debugging** within the Chromium codebase. It lives under `docs/linux` and is part of the broader Chromium contributor documentation set.
 
-## gdb
+Use this page as a starting point. For deeper coverage, see the linked references below or browse the surrounding `linux/` folder.
 
-Notes for gdb are still being expanded; this is a placeholder paragraph used by the chromium-atlas mock fixture set so that the title-list view always has descriptive copy to render.
+## Overview
 
-```sh
-gdb --args out/Default/content_shell --no-sandbox
+Debugging is concerned with the design, implementation, and operational characteristics of the relevant subsystem. The text on this page is a placeholder for the v1.0 mock fixture build of chromium-atlas.
+
+## Getting started
+
+Before diving in, ensure your checkout is up to date and that you have read the README under the same folder. The mock fixture intentionally keeps the structure realistic while the prose is generic.
+
+## Implementation notes
+
+Implementation details for Debugging are intentionally elided in this mock. Real content will be sourced from the chromium/src `docs/` tree once the v1.0.1 sync pipeline is wired.
+
+## Example
+
+```python
+def configure(args):
+    return {"target": args.target, "use_remoteexec": True}
 ```
 
-### rr replay
+## See also
 
-Notes for rr replay are still being expanded; this is a placeholder paragraph used by the chromium-atlas mock fixture set so that the title-list view always has descriptive copy to render.
+- [Brltty](/accessibility/os/brltty.md)
+- [Gardener](/gardener.md)
+- [Sheriff](/security/sheriff.md)

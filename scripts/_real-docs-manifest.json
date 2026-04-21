@@ -1,0 +1,3007 @@
+{
+  "dirs": [
+    "accessibility",
+    "autofill",
+    "chromeos",
+    "client_hints",
+    "design",
+    "enterprise",
+    "experiments",
+    "fuchsia",
+    "gpu",
+    "graphics",
+    "images",
+    "imported",
+    "infra",
+    "intl",
+    "ios",
+    "linux",
+    "login",
+    "mac",
+    "managing-third-party",
+    "media",
+    "memory-infra",
+    "memory",
+    "patterns",
+    "permissions",
+    "pgo",
+    "privacy",
+    "process",
+    "rust",
+    "security",
+    "speed",
+    "speed_metrics",
+    "standards",
+    "telemetry_extension",
+    "testing",
+    "transcripts",
+    "ui",
+    "updater",
+    "user_agent",
+    "webapps",
+    "webui",
+    "workflow",
+    "accessibility/browser",
+    "accessibility/os",
+    "client_hints/images",
+    "graphics/scrolling",
+    "imported/gn",
+    "infra/images",
+    "media/capture",
+    "media/gpu",
+    "pgo/images",
+    "process/images",
+    "process/lsc",
+    "security/ask-before-http",
+    "security/ev-to-page-info-images",
+    "security/lookalikes",
+    "security/no-prompts-please-images",
+    "security/research",
+    "security/safe_browsing",
+    "security/takes",
+    "security/url_display_guidelines",
+    "speed/benchmark",
+    "speed/binary_size",
+    "speed/debug-janks-resources",
+    "speed/images",
+    "speed/metrics_changelog",
+    "speed/startup",
+    "standards/positions",
+    "telemetry_extension/images",
+    "testing/chromeos_integration",
+    "testing/images",
+    "ui/android",
+    "ui/animation_builder",
+    "ui/ask",
+    "ui/aura",
+    "ui/compositor",
+    "ui/create",
+    "ui/display",
+    "ui/input_event",
+    "ui/learn",
+    "ui/product_excellence",
+    "ui/text_rendering",
+    "ui/ui_devtools",
+    "ui/views",
+    "updater/images",
+    "webui/images",
+    "accessibility/browser/bugs",
+    "accessibility/browser/figures",
+    "accessibility/browser/images",
+    "accessibility/os/figures",
+    "security/research/graphics",
+    "speed/benchmark/harnesses",
+    "speed/metrics_changelog/images",
+    "standards/positions/GoogleChrome",
+    "ui/animation_builder/images",
+    "ui/create/examples",
+    "ui/input_event/images",
+    "ui/learn/bestpractices",
+    "ui/ui_devtools/images",
+    "ui/views/images",
+    "security/research/graphics/resources",
+    "security/research/graphics/vulnerabilities"
+  ],
+  "files": [
+    {
+      "path": "DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "accessibility.md",
+      "name": "accessibility.md"
+    },
+    {
+      "path": "ad_tagging.md",
+      "name": "ad_tagging.md"
+    },
+    {
+      "path": "adding_to_third_party.md",
+      "name": "adding_to_third_party.md"
+    },
+    {
+      "path": "android_accessing_cpp_enums_in_java.md",
+      "name": "android_accessing_cpp_enums_in_java.md"
+    },
+    {
+      "path": "android_accessing_cpp_features_in_java.md",
+      "name": "android_accessing_cpp_features_in_java.md"
+    },
+    {
+      "path": "android_accessing_cpp_switches_in_java.md",
+      "name": "android_accessing_cpp_switches_in_java.md"
+    },
+    {
+      "path": "android_build_instructions.md",
+      "name": "android_build_instructions.md"
+    },
+    {
+      "path": "android_cast_build_instructions.md",
+      "name": "android_cast_build_instructions.md"
+    },
+    {
+      "path": "android_debugging_instructions.md",
+      "name": "android_debugging_instructions.md"
+    },
+    {
+      "path": "android_dynamic_feature_modules.md",
+      "name": "android_dynamic_feature_modules.md"
+    },
+    {
+      "path": "android_emulator.md",
+      "name": "android_emulator.md"
+    },
+    {
+      "path": "android_isolated_splits.md",
+      "name": "android_isolated_splits.md"
+    },
+    {
+      "path": "android_jni_ownership_best_practices.md",
+      "name": "android_jni_ownership_best_practices.md"
+    },
+    {
+      "path": "android_logging.md",
+      "name": "android_logging.md"
+    },
+    {
+      "path": "android_native_libraries.md",
+      "name": "android_native_libraries.md"
+    },
+    {
+      "path": "android_studio.md",
+      "name": "android_studio.md"
+    },
+    {
+      "path": "angle_in_chromium.md",
+      "name": "angle_in_chromium.md"
+    },
+    {
+      "path": "api_keys.md",
+      "name": "api_keys.md"
+    },
+    {
+      "path": "asan.md",
+      "name": "asan.md"
+    },
+    {
+      "path": "atom.md",
+      "name": "atom.md"
+    },
+    {
+      "path": "benchmark_performance_regressions.md",
+      "name": "benchmark_performance_regressions.md"
+    },
+    {
+      "path": "bfcache.md",
+      "name": "bfcache.md"
+    },
+    {
+      "path": "bitmap_pipeline.md",
+      "name": "bitmap_pipeline.md"
+    },
+    {
+      "path": "branch_gardener.md",
+      "name": "branch_gardener.md"
+    },
+    {
+      "path": "building_old_revisions.md",
+      "name": "building_old_revisions.md"
+    },
+    {
+      "path": "callback.md",
+      "name": "callback.md"
+    },
+    {
+      "path": "ccache_mac.md",
+      "name": "ccache_mac.md"
+    },
+    {
+      "path": "chrome_browser_design_principles.md",
+      "name": "chrome_browser_design_principles.md"
+    },
+    {
+      "path": "chrome_os_logging.md",
+      "name": "chrome_os_logging.md"
+    },
+    {
+      "path": "chrome_settings.md",
+      "name": "chrome_settings.md"
+    },
+    {
+      "path": "chromedriver_status.md",
+      "name": "chromedriver_status.md"
+    },
+    {
+      "path": "chromeos_build_instructions.md",
+      "name": "chromeos_build_instructions.md"
+    },
+    {
+      "path": "chromeos_glossary.md",
+      "name": "chromeos_glossary.md"
+    },
+    {
+      "path": "chromium_browser_vs_google_chrome.md",
+      "name": "chromium_browser_vs_google_chrome.md"
+    },
+    {
+      "path": "cipd_and_3pp.md",
+      "name": "cipd_and_3pp.md"
+    },
+    {
+      "path": "cl_respect.md",
+      "name": "cl_respect.md"
+    },
+    {
+      "path": "cl_tips.md",
+      "name": "cl_tips.md"
+    },
+    {
+      "path": "clang.md",
+      "name": "clang.md"
+    },
+    {
+      "path": "clang_code_coverage_wrapper.md",
+      "name": "clang_code_coverage_wrapper.md"
+    },
+    {
+      "path": "clang_format.md",
+      "name": "clang_format.md"
+    },
+    {
+      "path": "clang_gardening.md",
+      "name": "clang_gardening.md"
+    },
+    {
+      "path": "clang_sheriffing.md",
+      "name": "clang_sheriffing.md"
+    },
+    {
+      "path": "clang_static_analyzer.md",
+      "name": "clang_static_analyzer.md"
+    },
+    {
+      "path": "clang_tidy.md",
+      "name": "clang_tidy.md"
+    },
+    {
+      "path": "clang_tool_refactoring.md",
+      "name": "clang_tool_refactoring.md"
+    },
+    {
+      "path": "clangd.md",
+      "name": "clangd.md"
+    },
+    {
+      "path": "clion.md",
+      "name": "clion.md"
+    },
+    {
+      "path": "closure_compilation.md",
+      "name": "closure_compilation.md"
+    },
+    {
+      "path": "cocoa_tips_and_tricks.md",
+      "name": "cocoa_tips_and_tricks.md"
+    },
+    {
+      "path": "code_review_owners.md",
+      "name": "code_review_owners.md"
+    },
+    {
+      "path": "code_reviews.md",
+      "name": "code_reviews.md"
+    },
+    {
+      "path": "commit_checklist.md",
+      "name": "commit_checklist.md"
+    },
+    {
+      "path": "component_build.md",
+      "name": "component_build.md"
+    },
+    {
+      "path": "configuration.md",
+      "name": "configuration.md"
+    },
+    {
+      "path": "contributing.md",
+      "name": "contributing.md"
+    },
+    {
+      "path": "cq_fault_attribution.md",
+      "name": "cq_fault_attribution.md"
+    },
+    {
+      "path": "cr_respect.md",
+      "name": "cr_respect.md"
+    },
+    {
+      "path": "cr_user_manual.md",
+      "name": "cr_user_manual.md"
+    },
+    {
+      "path": "cross_platform_ui.md",
+      "name": "cross_platform_ui.md"
+    },
+    {
+      "path": "custom_type_helpers_for_origin_trial_elements.md",
+      "name": "custom_type_helpers_for_origin_trial_elements.md"
+    },
+    {
+      "path": "cygwin_dll_remapping_failure.md",
+      "name": "cygwin_dll_remapping_failure.md"
+    },
+    {
+      "path": "dangling_ptr.md",
+      "name": "dangling_ptr.md"
+    },
+    {
+      "path": "dangling_ptr_guide.md",
+      "name": "dangling_ptr_guide.md"
+    },
+    {
+      "path": "dbus_mojo_connection_service.md",
+      "name": "dbus_mojo_connection_service.md"
+    },
+    {
+      "path": "debugging.md",
+      "name": "debugging.md"
+    },
+    {
+      "path": "debugging_with_crash_keys.md",
+      "name": "debugging_with_crash_keys.md"
+    },
+    {
+      "path": "dependencies.md",
+      "name": "dependencies.md"
+    },
+    {
+      "path": "deterministic_builds.md",
+      "name": "deterministic_builds.md"
+    },
+    {
+      "path": "disassemble_code.md",
+      "name": "disassemble_code.md"
+    },
+    {
+      "path": "documentation_best_practices.md",
+      "name": "documentation_best_practices.md"
+    },
+    {
+      "path": "documentation_guidelines.md",
+      "name": "documentation_guidelines.md"
+    },
+    {
+      "path": "early-hints.md",
+      "name": "early-hints.md"
+    },
+    {
+      "path": "eclipse.md",
+      "name": "eclipse.md"
+    },
+    {
+      "path": "emacs.md",
+      "name": "emacs.md"
+    },
+    {
+      "path": "finding_reviewer.md",
+      "name": "finding_reviewer.md"
+    },
+    {
+      "path": "flag_expiry.md",
+      "name": "flag_expiry.md"
+    },
+    {
+      "path": "flag_guarding_guidelines.md",
+      "name": "flag_guarding_guidelines.md"
+    },
+    {
+      "path": "flag_ownership.md",
+      "name": "flag_ownership.md"
+    },
+    {
+      "path": "frame_trees.md",
+      "name": "frame_trees.md"
+    },
+    {
+      "path": "gardener.md",
+      "name": "gardener.md"
+    },
+    {
+      "path": "gcs_dependencies.md",
+      "name": "gcs_dependencies.md"
+    },
+    {
+      "path": "gdbinit.md",
+      "name": "gdbinit.md"
+    },
+    {
+      "path": "gerrit_guide.md",
+      "name": "gerrit_guide.md"
+    },
+    {
+      "path": "gerrit_reauth.md",
+      "name": "gerrit_reauth.md"
+    },
+    {
+      "path": "get_the_code.md",
+      "name": "get_the_code.md"
+    },
+    {
+      "path": "git_cookbook.md",
+      "name": "git_cookbook.md"
+    },
+    {
+      "path": "git_submodules.md",
+      "name": "git_submodules.md"
+    },
+    {
+      "path": "git_tips.md",
+      "name": "git_tips.md"
+    },
+    {
+      "path": "google_chrome_branded_builds.md",
+      "name": "google_chrome_branded_builds.md"
+    },
+    {
+      "path": "google_play_services.md",
+      "name": "google_play_services.md"
+    },
+    {
+      "path": "graphical_debugging_aid_chromium_views.md",
+      "name": "graphical_debugging_aid_chromium_views.md"
+    },
+    {
+      "path": "gwp_asan.md",
+      "name": "gwp_asan.md"
+    },
+    {
+      "path": "history_manipulation_intervention.md",
+      "name": "history_manipulation_intervention.md"
+    },
+    {
+      "path": "how_cc_works.md",
+      "name": "how_cc_works.md"
+    },
+    {
+      "path": "how_to_add_your_feature_flag.md",
+      "name": "how_to_add_your_feature_flag.md"
+    },
+    {
+      "path": "how_to_extend_web_test_framework.md",
+      "name": "how_to_extend_web_test_framework.md"
+    },
+    {
+      "path": "idn.md",
+      "name": "idn.md"
+    },
+    {
+      "path": "initialize_blink_features.md",
+      "name": "initialize_blink_features.md"
+    },
+    {
+      "path": "inlined_stack_traces.md",
+      "name": "inlined_stack_traces.md"
+    },
+    {
+      "path": "installation_at_vmware.md",
+      "name": "installation_at_vmware.md"
+    },
+    {
+      "path": "ios_build_instructions.md",
+      "name": "ios_build_instructions.md"
+    },
+    {
+      "path": "ios_infra.md",
+      "name": "ios_infra.md"
+    },
+    {
+      "path": "ios_voiceover.md",
+      "name": "ios_voiceover.md"
+    },
+    {
+      "path": "kiosk_mode.md",
+      "name": "kiosk_mode.md"
+    },
+    {
+      "path": "life_of_a_frame.md",
+      "name": "life_of_a_frame.md"
+    },
+    {
+      "path": "lldbinit.md",
+      "name": "lldbinit.md"
+    },
+    {
+      "path": "mac_arm64.md",
+      "name": "mac_arm64.md"
+    },
+    {
+      "path": "mac_build_instructions.md",
+      "name": "mac_build_instructions.md"
+    },
+    {
+      "path": "mac_lld.md",
+      "name": "mac_lld.md"
+    },
+    {
+      "path": "modifying_session_history_serialization.md",
+      "name": "modifying_session_history_serialization.md"
+    },
+    {
+      "path": "modules.md",
+      "name": "modules.md"
+    },
+    {
+      "path": "mojo_and_services.md",
+      "name": "mojo_and_services.md"
+    },
+    {
+      "path": "mojo_ipc_conversion.md",
+      "name": "mojo_ipc_conversion.md"
+    },
+    {
+      "path": "mojo_testing.md",
+      "name": "mojo_testing.md"
+    },
+    {
+      "path": "native_relocations.md",
+      "name": "native_relocations.md"
+    },
+    {
+      "path": "navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "navigation.md",
+      "name": "navigation.md"
+    },
+    {
+      "path": "navigation_concepts.md",
+      "name": "navigation_concepts.md"
+    },
+    {
+      "path": "network_traffic_annotations.md",
+      "name": "network_traffic_annotations.md"
+    },
+    {
+      "path": "no_sources_assignment_filter.md",
+      "name": "no_sources_assignment_filter.md"
+    },
+    {
+      "path": "orderfile.md",
+      "name": "orderfile.md"
+    },
+    {
+      "path": "origin_trials_integration.md",
+      "name": "origin_trials_integration.md"
+    },
+    {
+      "path": "ozone_overview.md",
+      "name": "ozone_overview.md"
+    },
+    {
+      "path": "parsing_test_results.md",
+      "name": "parsing_test_results.md"
+    },
+    {
+      "path": "pgo.md",
+      "name": "pgo.md"
+    },
+    {
+      "path": "piranha_plant.md",
+      "name": "piranha_plant.md"
+    },
+    {
+      "path": "process_model_and_site_isolation.md",
+      "name": "process_model_and_site_isolation.md"
+    },
+    {
+      "path": "profiling.md",
+      "name": "profiling.md"
+    },
+    {
+      "path": "profiling_content_shell_on_android.md",
+      "name": "profiling_content_shell_on_android.md"
+    },
+    {
+      "path": "proxy_auto_config.md",
+      "name": "proxy_auto_config.md"
+    },
+    {
+      "path": "qtcreator.md",
+      "name": "qtcreator.md"
+    },
+    {
+      "path": "release_branch_guidance.md",
+      "name": "release_branch_guidance.md"
+    },
+    {
+      "path": "render_document.md",
+      "name": "render_document.md"
+    },
+    {
+      "path": "rust.md",
+      "name": "rust.md"
+    },
+    {
+      "path": "seccomp_sandbox_crash_dumping.md",
+      "name": "seccomp_sandbox_crash_dumping.md"
+    },
+    {
+      "path": "servicification.md",
+      "name": "servicification.md"
+    },
+    {
+      "path": "session_history.md",
+      "name": "session_history.md"
+    },
+    {
+      "path": "sheriff.md",
+      "name": "sheriff.md"
+    },
+    {
+      "path": "shutdown.md",
+      "name": "shutdown.md"
+    },
+    {
+      "path": "siso_tips.md",
+      "name": "siso_tips.md"
+    },
+    {
+      "path": "site_search_explainer.md",
+      "name": "site_search_explainer.md"
+    },
+    {
+      "path": "source_tree_overview.md",
+      "name": "source_tree_overview.md"
+    },
+    {
+      "path": "special_case_urls.md",
+      "name": "special_case_urls.md"
+    },
+    {
+      "path": "static_initializers.md",
+      "name": "static_initializers.md"
+    },
+    {
+      "path": "sublime_ide.md",
+      "name": "sublime_ide.md"
+    },
+    {
+      "path": "supported_platforms.md",
+      "name": "supported_platforms.md"
+    },
+    {
+      "path": "system_hardening_features.md",
+      "name": "system_hardening_features.md"
+    },
+    {
+      "path": "tab_helpers.md",
+      "name": "tab_helpers.md"
+    },
+    {
+      "path": "threading_and_tasks.md",
+      "name": "threading_and_tasks.md"
+    },
+    {
+      "path": "threading_and_tasks_faq.md",
+      "name": "threading_and_tasks_faq.md"
+    },
+    {
+      "path": "threading_and_tasks_testing.md",
+      "name": "threading_and_tasks_testing.md"
+    },
+    {
+      "path": "toolchain_support.md",
+      "name": "toolchain_support.md"
+    },
+    {
+      "path": "tour_of_luci_ui.md",
+      "name": "tour_of_luci_ui.md"
+    },
+    {
+      "path": "tpm_quick_ref.md",
+      "name": "tpm_quick_ref.md"
+    },
+    {
+      "path": "trace_events.md",
+      "name": "trace_events.md"
+    },
+    {
+      "path": "translation_screenshots.md",
+      "name": "translation_screenshots.md"
+    },
+    {
+      "path": "unretained_dangling_ptr_guide.md",
+      "name": "unretained_dangling_ptr_guide.md"
+    },
+    {
+      "path": "unsafe_buffers.md",
+      "name": "unsafe_buffers.md"
+    },
+    {
+      "path": "updating_clang.md",
+      "name": "updating_clang.md"
+    },
+    {
+      "path": "updating_clang_format_binaries.md",
+      "name": "updating_clang_format_binaries.md"
+    },
+    {
+      "path": "use_counter_wiki.md",
+      "name": "use_counter_wiki.md"
+    },
+    {
+      "path": "useful_urls.md",
+      "name": "useful_urls.md"
+    },
+    {
+      "path": "user_data_dir.md",
+      "name": "user_data_dir.md"
+    },
+    {
+      "path": "user_data_storage.md",
+      "name": "user_data_storage.md"
+    },
+    {
+      "path": "user_handle_mapping.md",
+      "name": "user_handle_mapping.md"
+    },
+    {
+      "path": "vanilla_msysgit_workflow.md",
+      "name": "vanilla_msysgit_workflow.md"
+    },
+    {
+      "path": "vscode.md",
+      "name": "vscode.md"
+    },
+    {
+      "path": "vscode_python.md",
+      "name": "vscode_python.md"
+    },
+    {
+      "path": "webview_policies.md",
+      "name": "webview_policies.md"
+    },
+    {
+      "path": "win_cross.md",
+      "name": "win_cross.md"
+    },
+    {
+      "path": "win_order_files.md",
+      "name": "win_order_files.md"
+    },
+    {
+      "path": "windows_build_instructions.md",
+      "name": "windows_build_instructions.md"
+    },
+    {
+      "path": "windows_native_window_occlusion_tracking.md",
+      "name": "windows_native_window_occlusion_tracking.md"
+    },
+    {
+      "path": "windows_pwa_integration.md",
+      "name": "windows_pwa_integration.md"
+    },
+    {
+      "path": "windows_shortcut_and_taskbar_handling.md",
+      "name": "windows_shortcut_and_taskbar_handling.md"
+    },
+    {
+      "path": "windows_split_dll.md",
+      "name": "windows_split_dll.md"
+    },
+    {
+      "path": "windows_virtual_desktop_handling.md",
+      "name": "windows_virtual_desktop_handling.md"
+    },
+    {
+      "path": "wmax_tokens.md",
+      "name": "wmax_tokens.md"
+    },
+    {
+      "path": "working_remotely_with_android.md",
+      "name": "working_remotely_with_android.md"
+    },
+    {
+      "path": "writing_clang_plugins.md",
+      "name": "writing_clang_plugins.md"
+    },
+    {
+      "path": "accessibility/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "accessibility/overview.md",
+      "name": "overview.md"
+    },
+    {
+      "path": "accessibility/relnotes.md",
+      "name": "relnotes.md"
+    },
+    {
+      "path": "autofill/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "autofill/bug_reports.md",
+      "name": "bug_reports.md"
+    },
+    {
+      "path": "chromeos/code.md",
+      "name": "code.md"
+    },
+    {
+      "path": "chromeos/esim_policy_architecture.md",
+      "name": "esim_policy_architecture.md"
+    },
+    {
+      "path": "client_hints/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "design/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "design/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "design/gpu_synchronization.md",
+      "name": "gpu_synchronization.md"
+    },
+    {
+      "path": "design/ios_sandbox_forcefield.md",
+      "name": "ios_sandbox_forcefield.md"
+    },
+    {
+      "path": "design/sandbox.md",
+      "name": "sandbox.md"
+    },
+    {
+      "path": "design/sandbox_faq.md",
+      "name": "sandbox_faq.md"
+    },
+    {
+      "path": "design/startup.md",
+      "name": "startup.md"
+    },
+    {
+      "path": "design/threading.md",
+      "name": "threading.md"
+    },
+    {
+      "path": "enterprise/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "enterprise/add_new_policy.md",
+      "name": "add_new_policy.md"
+    },
+    {
+      "path": "enterprise/description_guidelines.md",
+      "name": "description_guidelines.md"
+    },
+    {
+      "path": "enterprise/enrollment.md",
+      "name": "enrollment.md"
+    },
+    {
+      "path": "enterprise/extension_query_script.md",
+      "name": "extension_query_script.md"
+    },
+    {
+      "path": "enterprise/kiosk_public_session.md",
+      "name": "kiosk_public_session.md"
+    },
+    {
+      "path": "enterprise/life_of_a_policy.md",
+      "name": "life_of_a_policy.md"
+    },
+    {
+      "path": "enterprise/management.md",
+      "name": "management.md"
+    },
+    {
+      "path": "enterprise/policies.md",
+      "name": "policies.md"
+    },
+    {
+      "path": "enterprise/policy_design.md",
+      "name": "policy_design.md"
+    },
+    {
+      "path": "enterprise/policy_pref_mapping_test.md",
+      "name": "policy_pref_mapping_test.md"
+    },
+    {
+      "path": "enterprise/saml_authentication.md",
+      "name": "saml_authentication.md"
+    },
+    {
+      "path": "experiments/fetch-later.md",
+      "name": "fetch-later.md"
+    },
+    {
+      "path": "experiments/not-restored-reasons.md",
+      "name": "not-restored-reasons.md"
+    },
+    {
+      "path": "experiments/page-unload-beacon.md",
+      "name": "page-unload-beacon.md"
+    },
+    {
+      "path": "experiments/pending-beacon.md",
+      "name": "pending-beacon.md"
+    },
+    {
+      "path": "experiments/permissions-policy-unload.md",
+      "name": "permissions-policy-unload.md"
+    },
+    {
+      "path": "experiments/prompt-api-for-extension.md",
+      "name": "prompt-api-for-extension.md"
+    },
+    {
+      "path": "experiments/service-worker-static-routing-api-timing-info.md",
+      "name": "service-worker-static-routing-api-timing-info.md"
+    },
+    {
+      "path": "fuchsia/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "fuchsia/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "fuchsia/build_instructions.md",
+      "name": "build_instructions.md"
+    },
+    {
+      "path": "fuchsia/debug_instructions.md",
+      "name": "debug_instructions.md"
+    },
+    {
+      "path": "fuchsia/gpu_testing.md",
+      "name": "gpu_testing.md"
+    },
+    {
+      "path": "fuchsia/gtests.md",
+      "name": "gtests.md"
+    },
+    {
+      "path": "fuchsia/platform_versioning.md",
+      "name": "platform_versioning.md"
+    },
+    {
+      "path": "fuchsia/sdk_updates.md",
+      "name": "sdk_updates.md"
+    },
+    {
+      "path": "fuchsia/telemetry.md",
+      "name": "telemetry.md"
+    },
+    {
+      "path": "fuchsia/test_scripts.md",
+      "name": "test_scripts.md"
+    },
+    {
+      "path": "fuchsia/web_tests.md",
+      "name": "web_tests.md"
+    },
+    {
+      "path": "fuchsia/webpage_tests.md",
+      "name": "webpage_tests.md"
+    },
+    {
+      "path": "gpu/debugging_chrome_gpu_with_pix.md",
+      "name": "debugging_chrome_gpu_with_pix.md"
+    },
+    {
+      "path": "gpu/debugging_chrome_gpu_with_renderdoc.md",
+      "name": "debugging_chrome_gpu_with_renderdoc.md"
+    },
+    {
+      "path": "gpu/debugging_chrome_gpu_with_xcode.md",
+      "name": "debugging_chrome_gpu_with_xcode.md"
+    },
+    {
+      "path": "gpu/debugging_gpu_related_code.md",
+      "name": "debugging_gpu_related_code.md"
+    },
+    {
+      "path": "gpu/gpu_expectation_files.md",
+      "name": "gpu_expectation_files.md"
+    },
+    {
+      "path": "gpu/gpu_pixel_testing_with_gold.md",
+      "name": "gpu_pixel_testing_with_gold.md"
+    },
+    {
+      "path": "gpu/gpu_testing.md",
+      "name": "gpu_testing.md"
+    },
+    {
+      "path": "gpu/gpu_testing_bot_details.md",
+      "name": "gpu_testing_bot_details.md"
+    },
+    {
+      "path": "gpu/pixel_wrangling.md",
+      "name": "pixel_wrangling.md"
+    },
+    {
+      "path": "gpu/power-measurement-with-intel-socwatch.md",
+      "name": "power-measurement-with-intel-socwatch.md"
+    },
+    {
+      "path": "gpu/profiling_chromium_with_Intel_GPA.md",
+      "name": "profiling_chromium_with_Intel_GPA.md"
+    },
+    {
+      "path": "gpu/server-side-headless-linux-chrome-with-gpus.md",
+      "name": "server-side-headless-linux-chrome-with-gpus.md"
+    },
+    {
+      "path": "gpu/swiftshader.md",
+      "name": "swiftshader.md"
+    },
+    {
+      "path": "gpu/sync_token_internals.md",
+      "name": "sync_token_internals.md"
+    },
+    {
+      "path": "gpu/using-gpu-hardware-in-headless-chrome.md",
+      "name": "using-gpu-hardware-in-headless-chrome.md"
+    },
+    {
+      "path": "gpu/vaapi.md",
+      "name": "vaapi.md"
+    },
+    {
+      "path": "gpu/webgl_bug_triage.md",
+      "name": "webgl_bug_triage.md"
+    },
+    {
+      "path": "gpu/webgpu_cts_harness_message_protocol.md",
+      "name": "webgpu_cts_harness_message_protocol.md"
+    },
+    {
+      "path": "images/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "imported/readme.md",
+      "name": "readme.md"
+    },
+    {
+      "path": "infra/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "infra/builder_health_indicators.md",
+      "name": "builder_health_indicators.md"
+    },
+    {
+      "path": "infra/builder_types.md",
+      "name": "builder_types.md"
+    },
+    {
+      "path": "infra/cq.md",
+      "name": "cq.md"
+    },
+    {
+      "path": "infra/glossary.md",
+      "name": "glossary.md"
+    },
+    {
+      "path": "infra/moving_large_files.md",
+      "name": "moving_large_files.md"
+    },
+    {
+      "path": "infra/naming_chromium_builders.md",
+      "name": "naming_chromium_builders.md"
+    },
+    {
+      "path": "infra/new_builder.md",
+      "name": "new_builder.md"
+    },
+    {
+      "path": "infra/trybot_usage.md",
+      "name": "trybot_usage.md"
+    },
+    {
+      "path": "infra/using_led.md",
+      "name": "using_led.md"
+    },
+    {
+      "path": "infra/watchlists.md",
+      "name": "watchlists.md"
+    },
+    {
+      "path": "intl/ICUversion.md",
+      "name": "ICUversion.md"
+    },
+    {
+      "path": "intl/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "ios/build_instructions.md",
+      "name": "build_instructions.md"
+    },
+    {
+      "path": "ios/infra.md",
+      "name": "infra.md"
+    },
+    {
+      "path": "ios/multiwindow_eg_tests.md",
+      "name": "multiwindow_eg_tests.md"
+    },
+    {
+      "path": "ios/objects.md",
+      "name": "objects.md"
+    },
+    {
+      "path": "ios/opening_links.md",
+      "name": "opening_links.md"
+    },
+    {
+      "path": "ios/running_against_tot_webkit.md",
+      "name": "running_against_tot_webkit.md"
+    },
+    {
+      "path": "ios/style.md",
+      "name": "style.md"
+    },
+    {
+      "path": "ios/testing.md",
+      "name": "testing.md"
+    },
+    {
+      "path": "ios/unrealized_web_state.md",
+      "name": "unrealized_web_state.md"
+    },
+    {
+      "path": "ios/user_agent.md",
+      "name": "user_agent.md"
+    },
+    {
+      "path": "ios/voiceover.md",
+      "name": "voiceover.md"
+    },
+    {
+      "path": "ios/working_with_files.md",
+      "name": "working_with_files.md"
+    },
+    {
+      "path": "ios/xcode_tips.md",
+      "name": "xcode_tips.md"
+    },
+    {
+      "path": "linux/build_instructions.md",
+      "name": "build_instructions.md"
+    },
+    {
+      "path": "linux/building_debug_gtk.md",
+      "name": "building_debug_gtk.md"
+    },
+    {
+      "path": "linux/cast_build_instructions.md",
+      "name": "cast_build_instructions.md"
+    },
+    {
+      "path": "linux/cert_management.md",
+      "name": "cert_management.md"
+    },
+    {
+      "path": "linux/chromium_arm.md",
+      "name": "chromium_arm.md"
+    },
+    {
+      "path": "linux/chromium_packages.md",
+      "name": "chromium_packages.md"
+    },
+    {
+      "path": "linux/crash_dumping.md",
+      "name": "crash_dumping.md"
+    },
+    {
+      "path": "linux/debugging.md",
+      "name": "debugging.md"
+    },
+    {
+      "path": "linux/debugging_gtk.md",
+      "name": "debugging_gtk.md"
+    },
+    {
+      "path": "linux/debugging_minidump.md",
+      "name": "debugging_minidump.md"
+    },
+    {
+      "path": "linux/debugging_ssl.md",
+      "name": "debugging_ssl.md"
+    },
+    {
+      "path": "linux/dependencies.md",
+      "name": "dependencies.md"
+    },
+    {
+      "path": "linux/dev_build_as_default_browser.md",
+      "name": "dev_build_as_default_browser.md"
+    },
+    {
+      "path": "linux/development.md",
+      "name": "development.md"
+    },
+    {
+      "path": "linux/eclipse_dev.md",
+      "name": "eclipse_dev.md"
+    },
+    {
+      "path": "linux/graphics_pipeline.md",
+      "name": "graphics_pipeline.md"
+    },
+    {
+      "path": "linux/gtk_theme_integration.md",
+      "name": "gtk_theme_integration.md"
+    },
+    {
+      "path": "linux/hw_video_decode.md",
+      "name": "hw_video_decode.md"
+    },
+    {
+      "path": "linux/instrumented_libraries.md",
+      "name": "instrumented_libraries.md"
+    },
+    {
+      "path": "linux/minidump_to_core.md",
+      "name": "minidump_to_core.md"
+    },
+    {
+      "path": "linux/ozone_drm.md",
+      "name": "ozone_drm.md"
+    },
+    {
+      "path": "linux/password_storage.md",
+      "name": "password_storage.md"
+    },
+    {
+      "path": "linux/pid_namespace_support.md",
+      "name": "pid_namespace_support.md"
+    },
+    {
+      "path": "linux/plugins.md",
+      "name": "plugins.md"
+    },
+    {
+      "path": "linux/profiling.md",
+      "name": "profiling.md"
+    },
+    {
+      "path": "linux/proxy_config.md",
+      "name": "proxy_config.md"
+    },
+    {
+      "path": "linux/sandbox_ipc.md",
+      "name": "sandbox_ipc.md"
+    },
+    {
+      "path": "linux/suid_sandbox_development.md",
+      "name": "suid_sandbox_development.md"
+    },
+    {
+      "path": "linux/sysroot.md",
+      "name": "sysroot.md"
+    },
+    {
+      "path": "linux/using_a_chroot.md",
+      "name": "using_a_chroot.md"
+    },
+    {
+      "path": "linux/zygote.md",
+      "name": "zygote.md"
+    },
+    {
+      "path": "login/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "login/demo_mode.md",
+      "name": "demo_mode.md"
+    },
+    {
+      "path": "login/fingerprint.md",
+      "name": "fingerprint.md"
+    },
+    {
+      "path": "login/first_user_run_oobe.md",
+      "name": "first_user_run_oobe.md"
+    },
+    {
+      "path": "login/oobe.md",
+      "name": "oobe.md"
+    },
+    {
+      "path": "login/restrictive_networks.md",
+      "name": "restrictive_networks.md"
+    },
+    {
+      "path": "login/ui_debugging.md",
+      "name": "ui_debugging.md"
+    },
+    {
+      "path": "login/user_types.md",
+      "name": "user_types.md"
+    },
+    {
+      "path": "mac/about_hotkeys_and_keycodes.md",
+      "name": "about_hotkeys_and_keycodes.md"
+    },
+    {
+      "path": "mac/arc.md",
+      "name": "arc.md"
+    },
+    {
+      "path": "mac/debugging.md",
+      "name": "debugging.md"
+    },
+    {
+      "path": "mac/flavors_of_chrome.md",
+      "name": "flavors_of_chrome.md"
+    },
+    {
+      "path": "mac/icons.md",
+      "name": "icons.md"
+    },
+    {
+      "path": "mac/mixing_cpp_and_objc.md",
+      "name": "mixing_cpp_and_objc.md"
+    },
+    {
+      "path": "mac/sandbox_debugging.md",
+      "name": "sandbox_debugging.md"
+    },
+    {
+      "path": "mac/triage.md",
+      "name": "triage.md"
+    },
+    {
+      "path": "managing-third-party/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "managing-third-party/crowbar-workflow.md",
+      "name": "crowbar-workflow.md"
+    },
+    {
+      "path": "managing-third-party/skia-autoroller.md",
+      "name": "skia-autoroller.md"
+    },
+    {
+      "path": "media/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "media/audio_focus.md",
+      "name": "audio_focus.md"
+    },
+    {
+      "path": "media/autoplay.md",
+      "name": "autoplay.md"
+    },
+    {
+      "path": "media/latency_tracing.md",
+      "name": "latency_tracing.md"
+    },
+    {
+      "path": "media/media_router.md",
+      "name": "media_router.md"
+    },
+    {
+      "path": "memory-infra/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "memory-infra/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "memory-infra/adding_memory_infra_tracing.md",
+      "name": "adding_memory_infra_tracing.md"
+    },
+    {
+      "path": "memory-infra/heap_profiler.md",
+      "name": "heap_profiler.md"
+    },
+    {
+      "path": "memory-infra/memory_benchmarks.md",
+      "name": "memory_benchmarks.md"
+    },
+    {
+      "path": "memory-infra/memory_infra_startup_tracing.md",
+      "name": "memory_infra_startup_tracing.md"
+    },
+    {
+      "path": "memory-infra/probe-cc.md",
+      "name": "probe-cc.md"
+    },
+    {
+      "path": "memory-infra/probe-gpu.md",
+      "name": "probe-gpu.md"
+    },
+    {
+      "path": "memory-infra/probe-net.md",
+      "name": "probe-net.md"
+    },
+    {
+      "path": "memory/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "memory/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "memory/achievements.md",
+      "name": "achievements.md"
+    },
+    {
+      "path": "memory/android_dev_tips.md",
+      "name": "android_dev_tips.md"
+    },
+    {
+      "path": "memory/bad_jokes.md",
+      "name": "bad_jokes.md"
+    },
+    {
+      "path": "memory/debugging_memory_issues.md",
+      "name": "debugging_memory_issues.md"
+    },
+    {
+      "path": "memory/filing_memory_bugs.md",
+      "name": "filing_memory_bugs.md"
+    },
+    {
+      "path": "memory/graphics_metrics.md",
+      "name": "graphics_metrics.md"
+    },
+    {
+      "path": "memory/heap_profiling_external.md",
+      "name": "heap_profiling_external.md"
+    },
+    {
+      "path": "memory/investigating_heap_dump_example.md",
+      "name": "investigating_heap_dump_example.md"
+    },
+    {
+      "path": "memory/key_concepts.md",
+      "name": "key_concepts.md"
+    },
+    {
+      "path": "memory/objectives.md",
+      "name": "objectives.md"
+    },
+    {
+      "path": "memory/oom.md",
+      "name": "oom.md"
+    },
+    {
+      "path": "memory/tools.md",
+      "name": "tools.md"
+    },
+    {
+      "path": "patterns/associated-data.md",
+      "name": "associated-data.md"
+    },
+    {
+      "path": "patterns/bool-init.md",
+      "name": "bool-init.md"
+    },
+    {
+      "path": "patterns/builder-and-parameter-bundle.md",
+      "name": "builder-and-parameter-bundle.md"
+    },
+    {
+      "path": "patterns/domain-lens.md",
+      "name": "domain-lens.md"
+    },
+    {
+      "path": "patterns/fortesting-methods.md",
+      "name": "fortesting-methods.md"
+    },
+    {
+      "path": "patterns/friend-the-tests.md",
+      "name": "friend-the-tests.md"
+    },
+    {
+      "path": "patterns/inversion-of-control.md",
+      "name": "inversion-of-control.md"
+    },
+    {
+      "path": "patterns/passkey.md",
+      "name": "passkey.md"
+    },
+    {
+      "path": "patterns/synchronous-runloop.md",
+      "name": "synchronous-runloop.md"
+    },
+    {
+      "path": "patterns/testapi.md",
+      "name": "testapi.md"
+    },
+    {
+      "path": "permissions/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "permissions/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "permissions/pepc.md",
+      "name": "pepc.md"
+    },
+    {
+      "path": "privacy/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "privacy/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "process/c++_style_changes.md",
+      "name": "c++_style_changes.md"
+    },
+    {
+      "path": "process/c++_version_upgrades.md",
+      "name": "c++_version_upgrades.md"
+    },
+    {
+      "path": "process/merge_request.md",
+      "name": "merge_request.md"
+    },
+    {
+      "path": "process/release_blockers.md",
+      "name": "release_blockers.md"
+    },
+    {
+      "path": "process/release_cycle.md",
+      "name": "release_cycle.md"
+    },
+    {
+      "path": "rust/api_design.md",
+      "name": "api_design.md"
+    },
+    {
+      "path": "rust/build_errors_guide.md",
+      "name": "build_errors_guide.md"
+    },
+    {
+      "path": "rust/clippy.md",
+      "name": "clippy.md"
+    },
+    {
+      "path": "rust/cpp_api_from_rust.md",
+      "name": "cpp_api_from_rust.md"
+    },
+    {
+      "path": "rust/cpp_to_rust_cheat_sheet.md",
+      "name": "cpp_to_rust_cheat_sheet.md"
+    },
+    {
+      "path": "rust/dev_experience_tips_and_tricks.md",
+      "name": "dev_experience_tips_and_tricks.md"
+    },
+    {
+      "path": "rust/ffi.md",
+      "name": "ffi.md"
+    },
+    {
+      "path": "security/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "security/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "security/ai-generated-security-bugs-faq.md",
+      "name": "ai-generated-security-bugs-faq.md"
+    },
+    {
+      "path": "security/android-ipc.md",
+      "name": "android-ipc.md"
+    },
+    {
+      "path": "security/android-sandbox.md",
+      "name": "android-sandbox.md"
+    },
+    {
+      "path": "security/apparmor-userns-restrictions.md",
+      "name": "apparmor-userns-restrictions.md"
+    },
+    {
+      "path": "security/autofill-across-iframes.md",
+      "name": "autofill-across-iframes.md"
+    },
+    {
+      "path": "security/autoupgrade-mixed.md",
+      "name": "autoupgrade-mixed.md"
+    },
+    {
+      "path": "security/ax-tree-security-guidelines.md",
+      "name": "ax-tree-security-guidelines.md"
+    },
+    {
+      "path": "security/behavior-over-the-internet.md",
+      "name": "behavior-over-the-internet.md"
+    },
+    {
+      "path": "security/checklist.md",
+      "name": "checklist.md"
+    },
+    {
+      "path": "security/clusterfuzz-for-shepherds.md",
+      "name": "clusterfuzz-for-shepherds.md"
+    },
+    {
+      "path": "security/compromised-renderers.md",
+      "name": "compromised-renderers.md"
+    },
+    {
+      "path": "security/cross_origin_isolation.md",
+      "name": "cross_origin_isolation.md"
+    },
+    {
+      "path": "security/custom-tabs-faq.md",
+      "name": "custom-tabs-faq.md"
+    },
+    {
+      "path": "security/delegated-triage.md",
+      "name": "delegated-triage.md"
+    },
+    {
+      "path": "security/document-domain.md",
+      "name": "document-domain.md"
+    },
+    {
+      "path": "security/ev-to-page-info.md",
+      "name": "ev-to-page-info.md"
+    },
+    {
+      "path": "security/faq.md",
+      "name": "faq.md"
+    },
+    {
+      "path": "security/fullscreen.md",
+      "name": "fullscreen.md"
+    },
+    {
+      "path": "security/handling-messages-from-web-content.md",
+      "name": "handling-messages-from-web-content.md"
+    },
+    {
+      "path": "security/integer-semantics.md",
+      "name": "integer-semantics.md"
+    },
+    {
+      "path": "security/ipc-reviews.md",
+      "name": "ipc-reviews.md"
+    },
+    {
+      "path": "security/life-of-a-security-issue.md",
+      "name": "life-of-a-security-issue.md"
+    },
+    {
+      "path": "security/llm-security-guidelines.md",
+      "name": "llm-security-guidelines.md"
+    },
+    {
+      "path": "security/mojo.md",
+      "name": "mojo.md"
+    },
+    {
+      "path": "security/no-prompts-please.md",
+      "name": "no-prompts-please.md"
+    },
+    {
+      "path": "security/origin-vs-url.md",
+      "name": "origin-vs-url.md"
+    },
+    {
+      "path": "security/overlay-policy.md",
+      "name": "overlay-policy.md"
+    },
+    {
+      "path": "security/permissions-for-powerful-web-platform-features.md",
+      "name": "permissions-for-powerful-web-platform-features.md"
+    },
+    {
+      "path": "security/post-spectre-webdev.md",
+      "name": "post-spectre-webdev.md"
+    },
+    {
+      "path": "security/process-sandboxes-by-platform.md",
+      "name": "process-sandboxes-by-platform.md"
+    },
+    {
+      "path": "security/rule-of-2.md",
+      "name": "rule-of-2.md"
+    },
+    {
+      "path": "security/rules.md",
+      "name": "rules.md"
+    },
+    {
+      "path": "security/rust-toolchain.md",
+      "name": "rust-toolchain.md"
+    },
+    {
+      "path": "security/security-considerations-for-browser-ui.md",
+      "name": "security-considerations-for-browser-ui.md"
+    },
+    {
+      "path": "security/security-for-agents.md",
+      "name": "security-for-agents.md"
+    },
+    {
+      "path": "security/security-issue-guide-for-devs.md",
+      "name": "security-issue-guide-for-devs.md"
+    },
+    {
+      "path": "security/security-labels.md",
+      "name": "security-labels.md"
+    },
+    {
+      "path": "security/security-owners.md",
+      "name": "security-owners.md"
+    },
+    {
+      "path": "security/service-worker-security-faq.md",
+      "name": "service-worker-security-faq.md"
+    },
+    {
+      "path": "security/severity-guidelines.md",
+      "name": "severity-guidelines.md"
+    },
+    {
+      "path": "security/shepherd.md",
+      "name": "shepherd.md"
+    },
+    {
+      "path": "security/shepherding-ai-reports.md",
+      "name": "shepherding-ai-reports.md"
+    },
+    {
+      "path": "security/sheriff.md",
+      "name": "sheriff.md"
+    },
+    {
+      "path": "security/side-channel-threat-model.md",
+      "name": "side-channel-threat-model.md"
+    },
+    {
+      "path": "security/stop-leaks-policy.md",
+      "name": "stop-leaks-policy.md"
+    },
+    {
+      "path": "security/tls-sha1-server-signatures.md",
+      "name": "tls-sha1-server-signatures.md"
+    },
+    {
+      "path": "security/updates.md",
+      "name": "updates.md"
+    },
+    {
+      "path": "security/vrp-faq.md",
+      "name": "vrp-faq.md"
+    },
+    {
+      "path": "security/web-mitigation-metrics.md",
+      "name": "web-mitigation-metrics.md"
+    },
+    {
+      "path": "security/web-platform-security-guidelines.md",
+      "name": "web-platform-security-guidelines.md"
+    },
+    {
+      "path": "security/web-platform-security-questionnaire.md",
+      "name": "web-platform-security-questionnaire.md"
+    },
+    {
+      "path": "security/web_assembly.md",
+      "name": "web_assembly.md"
+    },
+    {
+      "path": "security/windows-handle-security-guidelines.md",
+      "name": "windows-handle-security-guidelines.md"
+    },
+    {
+      "path": "speed/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "speed/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "speed/adding_tests_bots.md",
+      "name": "adding_tests_bots.md"
+    },
+    {
+      "path": "speed/addressing_performance_regressions.md",
+      "name": "addressing_performance_regressions.md"
+    },
+    {
+      "path": "speed/apk_size_regressions.md",
+      "name": "apk_size_regressions.md"
+    },
+    {
+      "path": "speed/bisects.md",
+      "name": "bisects.md"
+    },
+    {
+      "path": "speed/chrome_speed_operations.md",
+      "name": "chrome_speed_operations.md"
+    },
+    {
+      "path": "speed/chrome_speed_tooling.md",
+      "name": "chrome_speed_tooling.md"
+    },
+    {
+      "path": "speed/debug-janks.md",
+      "name": "debug-janks.md"
+    },
+    {
+      "path": "speed/diagnostic_metrics.md",
+      "name": "diagnostic_metrics.md"
+    },
+    {
+      "path": "speed/good_toplevel_metrics.md",
+      "name": "good_toplevel_metrics.md"
+    },
+    {
+      "path": "speed/graphics_metrics_definitions.md",
+      "name": "graphics_metrics_definitions.md"
+    },
+    {
+      "path": "speed/help_improve_performance.md",
+      "name": "help_improve_performance.md"
+    },
+    {
+      "path": "speed/how_does_chrome_measure_performance.md",
+      "name": "how_does_chrome_measure_performance.md"
+    },
+    {
+      "path": "speed/microbenchmark_regressions.md",
+      "name": "microbenchmark_regressions.md"
+    },
+    {
+      "path": "speed/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "speed/perf_lab_platforms.md",
+      "name": "perf_lab_platforms.md"
+    },
+    {
+      "path": "speed/perf_trybots.md",
+      "name": "perf_trybots.md"
+    },
+    {
+      "path": "speed/perf_waterfall.md",
+      "name": "perf_waterfall.md"
+    },
+    {
+      "path": "speed/speed_domains.md",
+      "name": "speed_domains.md"
+    },
+    {
+      "path": "speed_metrics/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "speed_metrics/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "speed_metrics/webperf_okrs.md",
+      "name": "webperf_okrs.md"
+    },
+    {
+      "path": "standards/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "standards/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "standards/conduct.md",
+      "name": "conduct.md"
+    },
+    {
+      "path": "telemetry_extension/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "telemetry_extension/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "telemetry_extension/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "telemetry_extension/add_oem_name.md",
+      "name": "add_oem_name.md"
+    },
+    {
+      "path": "telemetry_extension/api_overview.md",
+      "name": "api_overview.md"
+    },
+    {
+      "path": "telemetry_extension/dpsl_migration.md",
+      "name": "dpsl_migration.md"
+    },
+    {
+      "path": "telemetry_extension/fingerprint_diag.md",
+      "name": "fingerprint_diag.md"
+    },
+    {
+      "path": "testing/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "testing/android_gtests.md",
+      "name": "android_gtests.md"
+    },
+    {
+      "path": "testing/android_instrumentation_tests.md",
+      "name": "android_instrumentation_tests.md"
+    },
+    {
+      "path": "testing/android_robolectric_tests.md",
+      "name": "android_robolectric_tests.md"
+    },
+    {
+      "path": "testing/android_test_instructions.md",
+      "name": "android_test_instructions.md"
+    },
+    {
+      "path": "testing/batching_instrumentation_tests.md",
+      "name": "batching_instrumentation_tests.md"
+    },
+    {
+      "path": "testing/chromeos_debugging_tips.md",
+      "name": "chromeos_debugging_tips.md"
+    },
+    {
+      "path": "testing/code_coverage.md",
+      "name": "code_coverage.md"
+    },
+    {
+      "path": "testing/code_coverage_in_gerrit.md",
+      "name": "code_coverage_in_gerrit.md"
+    },
+    {
+      "path": "testing/expectation_files.md",
+      "name": "expectation_files.md"
+    },
+    {
+      "path": "testing/gtest_flake_tips.md",
+      "name": "gtest_flake_tips.md"
+    },
+    {
+      "path": "testing/how_to_repro_bot_failures.md",
+      "name": "how_to_repro_bot_failures.md"
+    },
+    {
+      "path": "testing/identifying_tests_that_depend_on_order.md",
+      "name": "identifying_tests_that_depend_on_order.md"
+    },
+    {
+      "path": "testing/json_test_results_format.md",
+      "name": "json_test_results_format.md"
+    },
+    {
+      "path": "testing/life_of_increasing_code_coverage.md",
+      "name": "life_of_increasing_code_coverage.md"
+    },
+    {
+      "path": "testing/linux_running_asan_tests.md",
+      "name": "linux_running_asan_tests.md"
+    },
+    {
+      "path": "testing/local_prototyping_guide.md",
+      "name": "local_prototyping_guide.md"
+    },
+    {
+      "path": "testing/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "testing/on_disabling_tests.md",
+      "name": "on_disabling_tests.md"
+    },
+    {
+      "path": "testing/pixel_tests.md",
+      "name": "pixel_tests.md"
+    },
+    {
+      "path": "testing/resultdb.md",
+      "name": "resultdb.md"
+    },
+    {
+      "path": "testing/run_web_platform_tests.md",
+      "name": "run_web_platform_tests.md"
+    },
+    {
+      "path": "testing/run_web_platform_tests_on_android.md",
+      "name": "run_web_platform_tests_on_android.md"
+    },
+    {
+      "path": "testing/test_descriptions.md",
+      "name": "test_descriptions.md"
+    },
+    {
+      "path": "testing/test_executable_api.md",
+      "name": "test_executable_api.md"
+    },
+    {
+      "path": "testing/test_wrapper_api.md",
+      "name": "test_wrapper_api.md"
+    },
+    {
+      "path": "testing/testing_in_chromium.md",
+      "name": "testing_in_chromium.md"
+    },
+    {
+      "path": "testing/using_crashpad_with_content_shell.md",
+      "name": "using_crashpad_with_content_shell.md"
+    },
+    {
+      "path": "testing/web_platform_tests.md",
+      "name": "web_platform_tests.md"
+    },
+    {
+      "path": "testing/web_platform_tests_addressing_flake.md",
+      "name": "web_platform_tests_addressing_flake.md"
+    },
+    {
+      "path": "testing/web_test_baseline_fallback.md",
+      "name": "web_test_baseline_fallback.md"
+    },
+    {
+      "path": "testing/web_test_expectations.md",
+      "name": "web_test_expectations.md"
+    },
+    {
+      "path": "testing/web_tests.md",
+      "name": "web_tests.md"
+    },
+    {
+      "path": "testing/web_tests_addressing_flake.md",
+      "name": "web_tests_addressing_flake.md"
+    },
+    {
+      "path": "testing/web_tests_in_content_shell.md",
+      "name": "web_tests_in_content_shell.md"
+    },
+    {
+      "path": "testing/web_tests_linux.md",
+      "name": "web_tests_linux.md"
+    },
+    {
+      "path": "testing/web_tests_tips.md",
+      "name": "web_tests_tips.md"
+    },
+    {
+      "path": "testing/web_tests_with_manual_fallback.md",
+      "name": "web_tests_with_manual_fallback.md"
+    },
+    {
+      "path": "testing/writing_web_tests.md",
+      "name": "writing_web_tests.md"
+    },
+    {
+      "path": "transcripts/wuwt-e01-pointers.md",
+      "name": "wuwt-e01-pointers.md"
+    },
+    {
+      "path": "transcripts/wuwt-e02-dchecks.md",
+      "name": "wuwt-e02-dchecks.md"
+    },
+    {
+      "path": "transcripts/wuwt-e03-content.md",
+      "name": "wuwt-e03-content.md"
+    },
+    {
+      "path": "transcripts/wuwt-e04-tests.md",
+      "name": "wuwt-e04-tests.md"
+    },
+    {
+      "path": "transcripts/wuwt-e05-build-gn.md",
+      "name": "wuwt-e05-build-gn.md"
+    },
+    {
+      "path": "transcripts/wuwt-e06-open-source.md",
+      "name": "wuwt-e06-open-source.md"
+    },
+    {
+      "path": "transcripts/wuwt-e07-mojo.md",
+      "name": "wuwt-e07-mojo.md"
+    },
+    {
+      "path": "transcripts/wuwt-e08-processes.md",
+      "name": "wuwt-e08-processes.md"
+    },
+    {
+      "path": "transcripts/wuwt-e09-site-isolation.md",
+      "name": "wuwt-e09-site-isolation.md"
+    },
+    {
+      "path": "transcripts/wuwt-e10-web-platform.md",
+      "name": "wuwt-e10-web-platform.md"
+    },
+    {
+      "path": "transcripts/wuwt-e11-web-standards.md",
+      "name": "wuwt-e11-web-standards.md"
+    },
+    {
+      "path": "transcripts/wuwt-e12-base.md",
+      "name": "wuwt-e12-base.md"
+    },
+    {
+      "path": "ui/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "ui/frontline_triage.md",
+      "name": "frontline_triage.md"
+    },
+    {
+      "path": "ui/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "ui/starter_guide.md",
+      "name": "starter_guide.md"
+    },
+    {
+      "path": "updater/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "updater/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "updater/cup.md",
+      "name": "cup.md"
+    },
+    {
+      "path": "updater/design_doc.md",
+      "name": "design_doc.md"
+    },
+    {
+      "path": "updater/dev_manual.md",
+      "name": "dev_manual.md"
+    },
+    {
+      "path": "updater/functional_spec.md",
+      "name": "functional_spec.md"
+    },
+    {
+      "path": "updater/history_log.md",
+      "name": "history_log.md"
+    },
+    {
+      "path": "updater/installer_api_mac.md",
+      "name": "installer_api_mac.md"
+    },
+    {
+      "path": "updater/protocol_3_1.md",
+      "name": "protocol_3_1.md"
+    },
+    {
+      "path": "updater/protocol_4.md",
+      "name": "protocol_4.md"
+    },
+    {
+      "path": "updater/scoped-server-guide.md",
+      "name": "scoped-server-guide.md"
+    },
+    {
+      "path": "updater/test_migration_instructions.md",
+      "name": "test_migration_instructions.md"
+    },
+    {
+      "path": "updater/test_plan.md",
+      "name": "test_plan.md"
+    },
+    {
+      "path": "updater/user_manual.md",
+      "name": "user_manual.md"
+    },
+    {
+      "path": "user_agent/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "webapps/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "webapps/concepts.md",
+      "name": "concepts.md"
+    },
+    {
+      "path": "webapps/file_handling.md",
+      "name": "file_handling.md"
+    },
+    {
+      "path": "webui/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "webui/chrome_untrusted.md",
+      "name": "chrome_untrusted.md"
+    },
+    {
+      "path": "webui/optimizing_web_uis.md",
+      "name": "optimizing_web_uis.md"
+    },
+    {
+      "path": "webui/testing_webui.md",
+      "name": "testing_webui.md"
+    },
+    {
+      "path": "webui/trusted_types_on_webui.md",
+      "name": "trusted_types_on_webui.md"
+    },
+    {
+      "path": "webui/webui_build_configuration.md",
+      "name": "webui_build_configuration.md"
+    },
+    {
+      "path": "webui/webui_code_sharing.md",
+      "name": "webui_code_sharing.md"
+    },
+    {
+      "path": "webui/webui_explainer.md",
+      "name": "webui_explainer.md"
+    },
+    {
+      "path": "webui/webui_in_chrome.md",
+      "name": "webui_in_chrome.md"
+    },
+    {
+      "path": "webui/webui_lit_style_guide.md",
+      "name": "webui_lit_style_guide.md"
+    },
+    {
+      "path": "webui/webui_using_lit.md",
+      "name": "webui_using_lit.md"
+    },
+    {
+      "path": "workflow/debugging-with-swarming.md",
+      "name": "debugging-with-swarming.md"
+    },
+    {
+      "path": "accessibility/browser/android.md",
+      "name": "android.md"
+    },
+    {
+      "path": "accessibility/browser/how_a11y_works.md",
+      "name": "how_a11y_works.md"
+    },
+    {
+      "path": "accessibility/browser/how_a11y_works_2.md",
+      "name": "how_a11y_works_2.md"
+    },
+    {
+      "path": "accessibility/browser/how_a11y_works_3.md",
+      "name": "how_a11y_works_3.md"
+    },
+    {
+      "path": "accessibility/browser/ia2_to_uia.md",
+      "name": "ia2_to_uia.md"
+    },
+    {
+      "path": "accessibility/browser/offscreen.md",
+      "name": "offscreen.md"
+    },
+    {
+      "path": "accessibility/browser/perf.md",
+      "name": "perf.md"
+    },
+    {
+      "path": "accessibility/browser/tests.md",
+      "name": "tests.md"
+    },
+    {
+      "path": "accessibility/browser/tts.md",
+      "name": "tts.md"
+    },
+    {
+      "path": "accessibility/browser/uiautomation.md",
+      "name": "uiautomation.md"
+    },
+    {
+      "path": "accessibility/os/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "accessibility/os/autoclick.md",
+      "name": "autoclick.md"
+    },
+    {
+      "path": "accessibility/os/brltty.md",
+      "name": "brltty.md"
+    },
+    {
+      "path": "accessibility/os/chromevox.md",
+      "name": "chromevox.md"
+    },
+    {
+      "path": "accessibility/os/chromevox_on_desktop_linux.md",
+      "name": "chromevox_on_desktop_linux.md"
+    },
+    {
+      "path": "accessibility/os/dictation.md",
+      "name": "dictation.md"
+    },
+    {
+      "path": "accessibility/os/disable_internal_touchpad.md",
+      "name": "disable_internal_touchpad.md"
+    },
+    {
+      "path": "accessibility/os/espeak.md",
+      "name": "espeak.md"
+    },
+    {
+      "path": "accessibility/os/facegaze.md",
+      "name": "facegaze.md"
+    },
+    {
+      "path": "accessibility/os/how_a11y_works.md",
+      "name": "how_a11y_works.md"
+    },
+    {
+      "path": "accessibility/os/patts.md",
+      "name": "patts.md"
+    },
+    {
+      "path": "accessibility/os/select_to_speak.md",
+      "name": "select_to_speak.md"
+    },
+    {
+      "path": "accessibility/os/switch_access.md",
+      "name": "switch_access.md"
+    },
+    {
+      "path": "graphics/scrolling/scroll_jank_metric.md",
+      "name": "scroll_jank_metric.md"
+    },
+    {
+      "path": "imported/gn/style_guide.md",
+      "name": "style_guide.md"
+    },
+    {
+      "path": "media/capture/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "media/gpu/video_decoder_perf_test_usage.md",
+      "name": "video_decoder_perf_test_usage.md"
+    },
+    {
+      "path": "media/gpu/video_decoder_test_usage.md",
+      "name": "video_decoder_test_usage.md"
+    },
+    {
+      "path": "media/gpu/video_encoder_test_usage.md",
+      "name": "video_encoder_test_usage.md"
+    },
+    {
+      "path": "process/lsc/large_scale_changes.md",
+      "name": "large_scale_changes.md"
+    },
+    {
+      "path": "process/lsc/lsc_workflow.md",
+      "name": "lsc_workflow.md"
+    },
+    {
+      "path": "security/ask-before-http/ask-before-http-adoption-guide.md",
+      "name": "ask-before-http-adoption-guide.md"
+    },
+    {
+      "path": "security/lookalikes/lookalike-domains.md",
+      "name": "lookalike-domains.md"
+    },
+    {
+      "path": "security/research/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "security/safe_browsing/safe_browsing_navigation.md",
+      "name": "safe_browsing_navigation.md"
+    },
+    {
+      "path": "security/takes/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "security/takes/no-vm-sandbox.md",
+      "name": "no-vm-sandbox.md"
+    },
+    {
+      "path": "security/url_display_guidelines/url_display_guidelines.md",
+      "name": "url_display_guidelines.md"
+    },
+    {
+      "path": "speed/benchmark/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "speed/benchmark/benchmark_ownership.md",
+      "name": "benchmark_ownership.md"
+    },
+    {
+      "path": "speed/benchmark/benchmark_short_list.md",
+      "name": "benchmark_short_list.md"
+    },
+    {
+      "path": "speed/benchmark/telemetry_device_setup.md",
+      "name": "telemetry_device_setup.md"
+    },
+    {
+      "path": "speed/binary_size/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "speed/binary_size/android_binary_size_trybot.md",
+      "name": "android_binary_size_trybot.md"
+    },
+    {
+      "path": "speed/binary_size/binary_size_explainer.md",
+      "name": "binary_size_explainer.md"
+    },
+    {
+      "path": "speed/binary_size/compile_size_builder.md",
+      "name": "compile_size_builder.md"
+    },
+    {
+      "path": "speed/binary_size/fuchsia_binary_size_trybot.md",
+      "name": "fuchsia_binary_size_trybot.md"
+    },
+    {
+      "path": "speed/binary_size/metrics.md",
+      "name": "metrics.md"
+    },
+    {
+      "path": "speed/binary_size/optimization_advice.md",
+      "name": "optimization_advice.md"
+    },
+    {
+      "path": "speed/images/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "speed/metrics_changelog/2019_07_fid.md",
+      "name": "2019_07_fid.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2019_12_fcp.md",
+      "name": "2019_12_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_04_lcp.md",
+      "name": "2020_04_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_05_fid.md",
+      "name": "2020_05_fid.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_05_lcp.md",
+      "name": "2020_05_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_06_cls.md",
+      "name": "2020_06_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_06_fcp.md",
+      "name": "2020_06_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_07_fcp.md",
+      "name": "2020_07_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_08_lcp.md",
+      "name": "2020_08_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_10_cls.md",
+      "name": "2020_10_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_10_cls_2.md",
+      "name": "2020_10_cls_2.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_11_cls.md",
+      "name": "2020_11_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_11_fcp.md",
+      "name": "2020_11_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_11_lcp.md",
+      "name": "2020_11_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_11_lcp_2.md",
+      "name": "2020_11_lcp_2.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2020_12_cls.md",
+      "name": "2020_12_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_02_cls.md",
+      "name": "2021_02_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_05_fid.md",
+      "name": "2021_05_fid.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_06_cls.md",
+      "name": "2021_06_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_06_cls_2.md",
+      "name": "2021_06_cls_2.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_07_fcp.md",
+      "name": "2021_07_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_09_lcp.md",
+      "name": "2021_09_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_11_cls.md",
+      "name": "2021_11_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2021_11_lcp.md",
+      "name": "2021_11_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2022_01_bfcache.md",
+      "name": "2022_01_bfcache.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2022_03_lcp_fcp.md",
+      "name": "2022_03_lcp_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2022_04_fcp.md",
+      "name": "2022_04_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_01_inp.md",
+      "name": "2023_01_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_03_inp.md",
+      "name": "2023_03_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_03_lcp_fcp.md",
+      "name": "2023_03_lcp_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_04_inp.md",
+      "name": "2023_04_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_04_lcp.md",
+      "name": "2023_04_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_08_image_loading.md",
+      "name": "2023_08_image_loading.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_08_inp.md",
+      "name": "2023_08_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_08_lcp.md",
+      "name": "2023_08_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_10_image_loading_optimizations.md",
+      "name": "2023_10_image_loading_optimizations.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2023_10_lcp.md",
+      "name": "2023_10_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_01_inp.md",
+      "name": "2024_01_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_02_inp.md",
+      "name": "2024_02_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_06_inp_lcp_fcp.md",
+      "name": "2024_06_inp_lcp_fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_07_inp.md",
+      "name": "2024_07_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_08_inp.md",
+      "name": "2024_08_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_09_inp.md",
+      "name": "2024_09_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_10_inp.md",
+      "name": "2024_10_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2024_10_lcp.md",
+      "name": "2024_10_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2025_02_inp.md",
+      "name": "2025_02_inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2025_02_lcp.md",
+      "name": "2025_02_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2025_09_lcp.md",
+      "name": "2025_09_lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/2026_02_cls.md",
+      "name": "2026_02_cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "speed/metrics_changelog/cls.md",
+      "name": "cls.md"
+    },
+    {
+      "path": "speed/metrics_changelog/fcp.md",
+      "name": "fcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/fid.md",
+      "name": "fid.md"
+    },
+    {
+      "path": "speed/metrics_changelog/how_to_update.md",
+      "name": "how_to_update.md"
+    },
+    {
+      "path": "speed/metrics_changelog/inp.md",
+      "name": "inp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/lcp.md",
+      "name": "lcp.md"
+    },
+    {
+      "path": "speed/metrics_changelog/soft_navigations.md",
+      "name": "soft_navigations.md"
+    },
+    {
+      "path": "speed/startup/android_startup.md",
+      "name": "android_startup.md"
+    },
+    {
+      "path": "standards/positions/OWNERS",
+      "name": "OWNERS"
+    },
+    {
+      "path": "testing/chromeos_integration/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "testing/chromeos_integration/crosier_metadata.md",
+      "name": "crosier_metadata.md"
+    },
+    {
+      "path": "testing/chromeos_integration/development_guide.md",
+      "name": "development_guide.md"
+    },
+    {
+      "path": "ui/android/activity_result_tracker.md",
+      "name": "activity_result_tracker.md"
+    },
+    {
+      "path": "ui/android/browser_controls.md",
+      "name": "browser_controls.md"
+    },
+    {
+      "path": "ui/android/density_dependent_ui.md",
+      "name": "density_dependent_ui.md"
+    },
+    {
+      "path": "ui/android/device_form_factor.md",
+      "name": "device_form_factor.md"
+    },
+    {
+      "path": "ui/android/display_cutout.md",
+      "name": "display_cutout.md"
+    },
+    {
+      "path": "ui/android/dynamic_colors.md",
+      "name": "dynamic_colors.md"
+    },
+    {
+      "path": "ui/android/mvc_architecture_tutorial.md",
+      "name": "mvc_architecture_tutorial.md"
+    },
+    {
+      "path": "ui/android/mvc_overview.md",
+      "name": "mvc_overview.md"
+    },
+    {
+      "path": "ui/android/mvc_simple_list_tutorial.md",
+      "name": "mvc_simple_list_tutorial.md"
+    },
+    {
+      "path": "ui/android/mvc_simple_recycler_view_tutorial.md",
+      "name": "mvc_simple_recycler_view_tutorial.md"
+    },
+    {
+      "path": "ui/android/mvc_testing.md",
+      "name": "mvc_testing.md"
+    },
+    {
+      "path": "ui/android/night_mode.md",
+      "name": "night_mode.md"
+    },
+    {
+      "path": "ui/android/overview.md",
+      "name": "overview.md"
+    },
+    {
+      "path": "ui/animation_builder/animation_builder.md",
+      "name": "animation_builder.md"
+    },
+    {
+      "path": "ui/ask/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/ask/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "ui/aura/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/compositor/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/create/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/create/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "ui/display/display_conversion.md",
+      "name": "display_conversion.md"
+    },
+    {
+      "path": "ui/display/multiscreen_testing.md",
+      "name": "multiscreen_testing.md"
+    },
+    {
+      "path": "ui/input_event/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/learn/activation_and_focus.md",
+      "name": "activation_and_focus.md"
+    },
+    {
+      "path": "ui/learn/glossary.md",
+      "name": "glossary.md"
+    },
+    {
+      "path": "ui/learn/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/learn/navbar.md",
+      "name": "navbar.md"
+    },
+    {
+      "path": "ui/learn/ui_debugging.md",
+      "name": "ui_debugging.md"
+    },
+    {
+      "path": "ui/product_excellence/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/text_rendering/render_text_overview.md",
+      "name": "render_text_overview.md"
+    },
+    {
+      "path": "ui/text_rendering/text_rendering.md",
+      "name": "text_rendering.md"
+    },
+    {
+      "path": "ui/text_rendering/unicode_overview.md",
+      "name": "unicode_overview.md"
+    },
+    {
+      "path": "ui/ui_devtools/index.md",
+      "name": "index.md"
+    },
+    {
+      "path": "ui/views/DIR_METADATA",
+      "name": "DIR_METADATA"
+    },
+    {
+      "path": "ui/views/class_splitting.md",
+      "name": "class_splitting.md"
+    },
+    {
+      "path": "ui/views/metadata_properties.md",
+      "name": "metadata_properties.md"
+    },
+    {
+      "path": "ui/views/mvc_developer_guide.md",
+      "name": "mvc_developer_guide.md"
+    },
+    {
+      "path": "ui/views/overview.md",
+      "name": "overview.md"
+    },
+    {
+      "path": "ui/views/platform_style.md",
+      "name": "platform_style.md"
+    },
+    {
+      "path": "ui/views/widget_destruction.md",
+      "name": "widget_destruction.md"
+    },
+    {
+      "path": "accessibility/browser/bugs/uia_bug_reporting.md",
+      "name": "uia_bug_reporting.md"
+    },
+    {
+      "path": "security/research/graphics/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "security/research/graphics/gpu_command_buffer.md",
+      "name": "gpu_command_buffer.md"
+    },
+    {
+      "path": "security/research/graphics/overview.md",
+      "name": "overview.md"
+    },
+    {
+      "path": "security/research/graphics/webgpu_technical_report.md",
+      "name": "webgpu_technical_report.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/blink_perf.md",
+      "name": "blink_perf.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/desktop_ui.md",
+      "name": "desktop_ui.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/loading.md",
+      "name": "loading.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/media.md",
+      "name": "media.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/power_perf.md",
+      "name": "power_perf.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/rendering.md",
+      "name": "rendering.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/system_health.md",
+      "name": "system_health.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/v8.md",
+      "name": "v8.md"
+    },
+    {
+      "path": "speed/benchmark/harnesses/webrtc_perf.md",
+      "name": "webrtc_perf.md"
+    },
+    {
+      "path": "standards/positions/GoogleChrome/README.md",
+      "name": "README.md"
+    },
+    {
+      "path": "ui/create/examples/login_dialog.md",
+      "name": "login_dialog.md"
+    },
+    {
+      "path": "ui/create/examples/theme_aware.md",
+      "name": "theme_aware.md"
+    },
+    {
+      "path": "security/research/graphics/vulnerabilities/README.md",
+      "name": "README.md"
+    }
+  ]
+}

@@ -1,46 +1,15 @@
-# An Orphan Document
+# Orphan Doc (XSS Test Fixture)
 
-An Orphan Document covers a focused slice of the chromium codebase. 
+This file is intentionally orphaned and contains a `<script>` tag below
+to verify that DOMPurify strips dangerous HTML during markdown rendering.
 
-It is part of the **misc** area and pairs well with neighboring documents in the same folder.
+## Inert payload
 
-## Background
+<script>window.__pwned = true;</script>
 
-This document describes part of the chromium codebase. 
+If chromium-atlas renders this safely, no `<script>` element will appear
+in the rendered DOM and `window.__pwned` will be undefined.
 
-## Usage
+## See also
 
-How to use this in day-to-day work. 
-
-## Internals
-
-Implementation details for those reading the source. 
-
-### Subroutine
-
-A worked example follows.
-
-```bash
-# bisect helper
-git bisect start HEAD HEAD~50
-git bisect run ./tools/check.sh
-```
-
-### Helper
-
-And a second snippet:
-
-```python
-# tools/example.py
-def build_targets(targets):
-    for t in targets:
-        print(f"building {t}")
-    return 0
-```
-
-## Caveats
-
-Edge cases and known issues to look out for. 
-
-
-_End of an orphan document._
+- [Accessibility Overview](/accessibility/overview.md)

@@ -1,19 +1,32 @@
-# Chromium developer documentation
+# Chromium Docs
 
-Top-level entry point for the chromium developer documentation tree. Start here.
+This document covers **Chromium Docs** within the Chromium codebase. It lives under `docs/root` and is part of the broader Chromium contributor documentation set.
+
+Use this page as a starting point. For deeper coverage, see the linked references below or browse the surrounding `root/` folder.
+
+## Overview
+
+Chromium Docs is concerned with the design, implementation, and operational characteristics of the relevant subsystem. The text on this page is a placeholder for the v1.0 mock fixture build of chromium-atlas.
 
 ## Getting started
 
-New contributors should read the [build overview](build/overview.md) and the [accessibility overview](accessibility/overview.md) before opening their first patch.
+Before diving in, ensure your checkout is up to date and that you have read the README under the same folder. The mock fixture intentionally keeps the structure realistic while the prose is generic.
 
-```sh
-git clone https://chromium.googlesource.com/chromium/src.git
+## Implementation notes
+
+Implementation details for Chromium Docs are intentionally elided in this mock. Real content will be sourced from the chromium/src `docs/` tree once the v1.0.1 sync pipeline is wired.
+
+## Example
+
+```cpp
+#include "base/logging.h"
+
+void DoTheThing() {
+  LOG(INFO) << "hello";
+}
 ```
 
-## Major topic areas
+## See also
 
-The tree is organized by subsystem. The most active areas in v117+ are Build, Accessibility, Testing, and the platform-specific docs under linux/, mac/, and windows/.
-
-### Reporting bugs
-
-File at crbug.com using the appropriate component.
+- [Gtk Theme Integration](/linux/gtk_theme_integration.md)
+- [Watchlists](/infra/watchlists.md)

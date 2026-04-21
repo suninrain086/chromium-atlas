@@ -1,24 +1,33 @@
-# Accessibility overview
+# Overview
 
-How chromium implements accessibility on every platform — the AXTree, accessibility events, and the per-platform bridges.
+This document covers **Overview** within the Chromium codebase. It lives under `docs/accessibility` and is part of the broader Chromium contributor documentation set.
 
-## Architecture
+Use this page as a starting point. For deeper coverage, see the linked references below or browse the surrounding `accessibility/` folder.
 
-All platform accessibility APIs are fed from a single in-process AXTree representation. See [tests](tests.md) for how this is verified, and the platform-specific implementations under [linux/sandboxing](../linux/sandboxing.md) for sandbox interactions.
+## Overview
+
+Overview is concerned with the design, implementation, and operational characteristics of the relevant subsystem. The text on this page is a placeholder for the v1.0 mock fixture build of chromium-atlas.
+
+## Getting started
+
+Before diving in, ensure your checkout is up to date and that you have read the README under the same folder. The mock fixture intentionally keeps the structure realistic while the prose is generic.
+
+## Implementation notes
+
+Implementation details for Overview are intentionally elided in this mock. Real content will be sourced from the chromium/src `docs/` tree once the v1.0.1 sync pipeline is wired.
+
+## Example
 
 ```cpp
-// In content/browser/accessibility/browser_accessibility_manager.cc
-std::unique_ptr<BrowserAccessibilityManager> CreateManager(...);
+#include "base/logging.h"
+
+void DoTheThing() {
+  LOG(INFO) << "hello";
+}
 ```
 
-### AXTree
+## See also
 
-An immutable per-frame snapshot.
-
-### ATK on Linux
-
-Bridged via libatk-bridge.
-
-### UI Automation on Windows
-
-See windows-specific notes.
+- [Bool Init](/patterns/bool-init.md)
+- [Android Binary Size Trybot](/speed/binary_size/android_binary_size_trybot.md)
+- [Lookalike Domains](/security/lookalikes/lookalike-domains.md)

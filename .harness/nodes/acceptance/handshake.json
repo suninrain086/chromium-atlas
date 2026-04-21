@@ -1,14 +1,44 @@
 {
   "nodeId": "acceptance",
   "nodeType": "review",
-  "runId": "run_1",
+  "runId": "run_2",
   "status": "completed",
-  "verdict": "ITERATE",
-  "summary": "PM + Designer independent acceptance review of v1.0.1 against the 12-AC delightful-tier brief. 11/11 in-scope ACs implemented and test-asserted (AC-11 deferred to e2e-user). Three yellow-tier findings: P1 README.md is stale (still says 'v1.0 in development', stack lists fcose/Supabase/GH Actions that are not shipped, missing F4 quickstart+privacy+screenshots), P1 THIRD-PARTY.md lists cytoscape-fcose which was dropped in batch 1 to fit the 250 KB ceiling, D1 graph view lacks loading affordance during cold lazy-import of the 138 KB cyto chunk. Zero critical, zero blockers. Bundle still 17.58 KB main / 239.71 KB total gz. Polish patch can address all three in docs+main.ts only.",
-  "timestamp": "2026-04-21T20:55:00Z",
+  "verdict": "PASS",
+  "summary": "Run_2 PM + Designer re-review after fix patch 9ff5bcf closed all 3 run_1 yellows: README v1.0.1 refresh, THIRD-PARTY.md corrected (cytoscape-fcose removed), graph loading state added. 13/13 delightful tier baseline covered. 26/26 Playwright still green. 0 critical, 0 warning.",
+  "timestamp": "2026-04-21T12:58:27Z",
   "artifacts": [
-    { "type": "eval", "role": "pm", "path": "run_1/eval-pm.md" },
-    { "type": "eval", "role": "designer", "path": "run_1/eval-designer.md" }
+    {
+      "type": "eval",
+      "role": "pm",
+      "path": "run_2/eval-pm.md"
+    },
+    {
+      "type": "eval",
+      "role": "designer",
+      "path": "run_2/eval-designer.md"
+    }
   ],
-  "findings": { "critical": 0, "warning": 3, "suggestion": 0 }
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  },
+  "tierCoverage": {
+    "covered": [
+      "typography",
+      "responsive",
+      "code-blocks",
+      "tables",
+      "testing-md",
+      "micro-interactions",
+      "color-scheme",
+      "favicon-meta",
+      "navigation",
+      "loading-states",
+      "error-states",
+      "focus-styles",
+      "page-transitions"
+    ],
+    "skipped": []
+  }
 }

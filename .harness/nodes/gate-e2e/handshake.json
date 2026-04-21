@@ -1,0 +1,20 @@
+{
+  "nodeId": "gate-e2e",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "verdict=PASS, next=post-launch-sim. 3 personas LGTM. 34/35 backing.",
+  "timestamp": "2026-04-21T14:55:08Z",
+  "artifacts": [
+    {
+      "type": "gate-decision",
+      "path": "run_1/decision.md"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  }
+}

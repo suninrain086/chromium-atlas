@@ -1,0 +1,17 @@
+{
+  "nodeId": "discuss",
+  "nodeType": "discuss",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Locked v1.0.2 plan: sparse-clone sync script, scan --source flag, sync-health indicator (~0.5 KB gz), two GH Actions workflows, AC-1..AC-12 mapped. Mock fixtures stay CI default; real sync is opt-in.",
+  "timestamp": "2026-04-21T22:21:00Z",
+  "artifacts": [
+    {"type":"decision","path":".harness/nodes/discuss/run_1/decision.md"},
+    {"type":"eval","path":".harness/nodes/discuss/run_1/round-1-architect.md"},
+    {"type":"eval","path":".harness/nodes/discuss/run_1/round-1-engineer.md"},
+    {"type":"eval","path":".harness/nodes/discuss/run_1/round-1-tester.md"}
+  ],
+  "findings": null,
+  "metrics": null
+}

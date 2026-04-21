@@ -1,0 +1,20 @@
+{
+  "nodeId": "gate-e2e",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "verdict=PASS, next=post-launch-sim. All 3 personas LGTM. 26/26 backing assertions green. 14/14 raw scenarios (vs 11/14 in v1.0).",
+  "timestamp": "2026-04-21T13:01:34Z",
+  "artifacts": [
+    {
+      "type": "gate-decision",
+      "path": "run_1/decision.md"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  }
+}

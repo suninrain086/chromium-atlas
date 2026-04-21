@@ -1,7 +1,11 @@
 # chromium-atlas
 
+[![sync-docs](https://github.com/jackyzeng/chromium-atlas/actions/workflows/sync-docs.yml/badge.svg)](https://github.com/jackyzeng/chromium-atlas/actions/workflows/sync-docs.yml)
+
 > A graph-aware, developer-friendly browser for the official
 > [Chromium documentation](https://chromium.googlesource.com/chromium/src/+/main/docs/).
+
+**Live site:** _(deploy URL placeholder — populated after first sync-docs + deploy run lands; will be `https://<user>.github.io/chromium-atlas/`)_
 
 Browse 600+ chromium docs with a folder-tree sidebar, three reading layouts,
 global search, dark/light mode, a global relationship **graph view**, and

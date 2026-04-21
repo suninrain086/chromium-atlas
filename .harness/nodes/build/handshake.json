@@ -1,0 +1,29 @@
+{
+  "nodeId": "build",
+  "nodeType": "build",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": null,
+  "summary": "Implemented all 5 v1.0.2 features: F1 scripts/sync-chromium.mjs (sparse clone, idempotent, writes sync-meta.json to dist-docs/ + public/); F2 scan-docs.ts --source {real|mock} CLI flag; F3 .github/workflows/sync-docs.yml (cron 0 * * * *, workflow_dispatch, concurrency, cache); F4 .github/workflows/deploy.yml (workflow_run → actions/deploy-pages@v4); F5 src/components/sync-health.ts header indicator (age-gated <24h, hidden otherwise). package.json sync:real script wires F1+F2. .gitignore adds dist-docs/, .cache/, public/sync-meta.json. README badge + live URL placeholder added. Bundle: main 18.13 KB gz (≤30 ✅, +0.55 from v1.0.1), total 240.29 KB gz (≤250 ✅).",
+  "timestamp": "2026-04-21T22:25:00Z",
+  "artifacts": [
+    {"type":"script","path":"scripts/sync-chromium.mjs"},
+    {"type":"code","path":"scripts/scan-docs.ts"},
+    {"type":"code","path":"src/components/sync-health.ts"},
+    {"type":"code","path":"src/main.ts"},
+    {"type":"code","path":"src/styles/app.css"},
+    {"type":"workflow","path":".github/workflows/sync-docs.yml"},
+    {"type":"workflow","path":".github/workflows/deploy.yml"},
+    {"type":"config","path":"package.json"},
+    {"type":"config","path":".gitignore"},
+    {"type":"doc","path":"README.md"}
+  ],
+  "findings": null,
+  "metrics": {
+    "main_chunk_gz_bytes": 18564,
+    "graph_chunk_gz_bytes": 141940,
+    "total_gz_bytes": 246057,
+    "main_budget_gz_bytes": 30720,
+    "total_budget_gz_bytes": 256000
+  }
+}

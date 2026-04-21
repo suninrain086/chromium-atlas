@@ -8,6 +8,7 @@ import { openPalette, closePalette, isPaletteOpen, refreshFuseIndex } from "./co
 import { renderFolderView } from "./views/folder";
 import { renderDocView } from "./views/doc";
 import { mountInstallButton } from "./components/install-button";
+import { mountSyncHealth } from "./components/sync-health";
 import { ancestorFolders, parentFolder } from "./lib/paths";
 
 const app = document.getElementById("app") as HTMLElement;
@@ -40,6 +41,7 @@ function renderShell() {
       </button>
       <div id="theme-host"></div>
       <div id="install-host"></div>
+      <span id="sync-health" class="sync-health" hidden></span>
     </header>
     <main class="main" id="view"></main>
     <div class="backdrop" id="backdrop"></div>
@@ -47,6 +49,7 @@ function renderShell() {
   mountSidebar(document.querySelector(".sidebar") as HTMLElement);
   mountThemeToggle(document.getElementById("theme-host")!);
   mountInstallButton(document.getElementById("install-host")!);
+  mountSyncHealth(document.getElementById("sync-health") as HTMLElement);
   document.getElementById("open-palette")!.addEventListener("click", () => openPalette());
   document.getElementById("hamburger")!.addEventListener("click", () => setDrawerOpen(!isDrawerOpen()));
   document.getElementById("backdrop")!.addEventListener("click", () => setDrawerOpen(false));

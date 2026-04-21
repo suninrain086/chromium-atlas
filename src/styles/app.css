@@ -603,4 +603,14 @@ code, pre, .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, 
 }
 .install-btn[hidden] { display: none; }
 
+.sync-health {
+  font-size: 11px;
+  color: var(--text-dim, #888);
+  padding: 0 8px;
+  white-space: nowrap;
+  user-select: none;
+  align-self: center;
+}
+.sync-health[hidden] { display: none; }
+
 .graph-cy { position: relative; }

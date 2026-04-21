@@ -266,6 +266,16 @@ export function writeAllIndexes(outDir: string, docsDir: string): { docCount: nu
 
 const isMain = import.meta.url === `file://${process.argv[1]}`;
 if (isMain) {
+  // CLI: --source {real|mock} maps to DOCS_DIR (real=dist-docs, mock=test/fixtures/docs).
+  // If both --source and DOCS_DIR are set, --source wins (explicit > env).
+  const args = process.argv.slice(2);
+  const sIdx = args.indexOf("--source");
+  if (sIdx >= 0 && args[sIdx + 1]) {
+    const v = args[sIdx + 1];
+    if (v === "real") process.env.DOCS_DIR = resolveAbs("dist-docs");
+    else if (v === "mock") process.env.DOCS_DIR = resolveAbs("test", "fixtures", "docs");
+    else { console.error(`[scan-docs] --source must be 'real' or 'mock', got '${v}'`); process.exit(2); }
+  }
   const dir = resolveDocsDir();
   const out = resolveAbs("public");
   const r = writeAllIndexes(out, dir);

@@ -6,4 +6,7 @@ playwright-report/
 public/docs.json
 public/tree.json
 public/links.json
+public/sync-meta.json
+dist-docs/
+.cache/
 .DS_Store

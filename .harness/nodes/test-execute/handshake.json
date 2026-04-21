@@ -1,0 +1,38 @@
+{
+  "nodeId": "test-execute",
+  "nodeType": "build",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "8/8 P0 Playwright tests pass against production-mode dist/ in 1.7s. AC-1..AC-11 all green: folder tree, doc render+TOC+backlinks, Cmd+K, / shortcut, Tab focus trap, theme roundtrip, 404 route, XSS no-execute. Two test-infra fixes during execution (port collision with stale memex preview server, modifier key naming) — production code unchanged.",
+  "timestamp": "2026-04-21T18:02:00Z",
+  "artifacts": [
+    { "type": "eval", "role": "tester", "path": "run_1/tester.md" },
+    { "type": "cli-output", "path": "run_1/test-output.txt" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  },
+  "tierCoverage": {
+    "covered": [
+      "AC-1-folder-tree",
+      "AC-2-doc-render",
+      "AC-3-toc",
+      "AC-4-backlinks",
+      "AC-5-palette-cmdk",
+      "AC-6-palette-slash",
+      "AC-7-palette-focus-trap",
+      "AC-8-theme-toggle",
+      "AC-9-deep-link",
+      "AC-10-404-route",
+      "AC-11-xss-no-execute"
+    ],
+    "skipped": [
+      { "key": "AC-12-three-mode-folder-view", "reason": "visual; deferred to acceptance" },
+      { "key": "AC-13-graph-view", "reason": "v1.0 stub" },
+      { "key": "AC-14-pwa-offline", "reason": "deferred to acceptance" }
+    ]
+  }
+}

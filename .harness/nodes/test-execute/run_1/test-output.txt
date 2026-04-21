@@ -1,0 +1,54 @@
+
+> chromium-atlas@1.0.0-alpha.1 test
+> npm run test:build && playwright test
+
+
+> chromium-atlas@1.0.0-alpha.1 test:build
+> DOCS_DIR=test/fixtures/docs npm run build
+
+
+> chromium-atlas@1.0.0-alpha.1 build
+> tsc --noEmit && vite build
+
+vite v6.4.2 building for production...
+[atlas] (buildStart) indexed 94 doc(s) from /Users/jackyzeng/projects/chromium-atlas/test/fixtures/docs
+transforming...
+✓ 102 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                   1.50 kB │ gzip:  0.70 kB
+dist/assets/jetbrains-mono-greek-400-normal-C190GLew.woff2        4.23 kB
+dist/assets/jetbrains-mono-cyrillic-400-normal-BEIGL1Tu.woff2     5.33 kB
+dist/assets/jetbrains-mono-vietnamese-400-normal-CqNFfHCs.woff    5.37 kB
+dist/assets/jetbrains-mono-greek-400-normal-B9oWc5Lo.woff         5.66 kB
+dist/assets/jetbrains-mono-cyrillic-400-normal-ugxPyKxw.woff      6.98 kB
+dist/assets/jetbrains-mono-latin-ext-400-normal-Bc8Ftmh3.woff2    7.34 kB
+dist/assets/jetbrains-mono-latin-ext-400-normal-fXTG6kC5.woff    10.13 kB
+dist/assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2          10.25 kB
+dist/assets/inter-greek-ext-wght-normal-DlzME5K_.woff2           11.23 kB
+dist/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2            18.75 kB
+dist/assets/inter-greek-wght-normal-CkhJZR-_.woff2               19.00 kB
+dist/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2       21.17 kB
+dist/assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2        25.96 kB
+dist/assets/jetbrains-mono-latin-400-normal-6-qcROiO.woff        27.50 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2               48.26 kB
+dist/assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2           85.07 kB
+dist/assets/index-D7w33_G8.css                                   26.92 kB │ gzip: 11.56 kB
+dist/assets/hljs-core-BG_Koye0.js                                20.90 kB │ gzip:  8.42 kB
+dist/assets/fuse-CMLop-UK.js                                     24.38 kB │ gzip:  8.65 kB
+dist/assets/index-DB8DhuSz.js                                    52.54 kB │ gzip: 16.44 kB
+dist/assets/markdown-pmc3iiuK.js                                126.35 kB │ gzip: 54.82 kB
+✓ built in 284ms
+
+Running 8 tests using 1 worker
+
+  ✓  1 [chromium] › test/e2e/smoke.spec.ts:4:3 › smoke — chromium-atlas v1.0 › home renders folder tree + brand (175ms)
+  ✓  2 [chromium] › test/e2e/smoke.spec.ts:11:3 › smoke — chromium-atlas v1.0 › doc route renders markdown + TOC + back-links section (83ms)
+  ✓  3 [chromium] › test/e2e/smoke.spec.ts:21:3 › smoke — chromium-atlas v1.0 › Cmd+K opens palette and arrow+Enter navigates (200ms)
+  ✓  4 [chromium] › test/e2e/smoke.spec.ts:34:3 › smoke — chromium-atlas v1.0 › / shortcut also opens palette outside inputs (82ms)
+  ✓  5 [chromium] › test/e2e/smoke.spec.ts:41:3 › smoke — chromium-atlas v1.0 › palette Tab is trapped (focus stays on input) (81ms)
+  ✓  6 [chromium] › test/e2e/smoke.spec.ts:51:3 › smoke — chromium-atlas v1.0 › theme toggle round-trips and persists data-theme (78ms)
+  ✓  7 [chromium] › test/e2e/smoke.spec.ts:60:3 › smoke — chromium-atlas v1.0 › 404 route shows Page-not-found state (50ms)
+  ✓  8 [chromium] › test/e2e/smoke.spec.ts:65:3 › smoke — chromium-atlas v1.0 › XSS — markdown <script> tag does not execute (84ms)
+
+  8 passed (1.7s)

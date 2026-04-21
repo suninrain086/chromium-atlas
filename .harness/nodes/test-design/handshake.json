@@ -1,0 +1,19 @@
+{
+  "nodeId": "test-design",
+  "nodeType": "build",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "8 P0 Playwright tests authored covering AC-1..AC-11 from PROJECT_BRIEF F1-F12 ∩ delightful tier baseline ∩ code-review/run_1 findings (F1, F2, S1). playwright.config.ts wired to vite preview on port 4173 against fixture-built dist/. test/e2e/smoke.spec.ts contains: home tree, doc render+TOC+backlinks, Cmd+K palette, / shortcut, Tab focus trap, theme roundtrip, 404 route, XSS no-execute. Graph view, three-mode toggle, PWA deferred to acceptance/audit.",
+  "timestamp": "2026-04-21T17:58:00Z",
+  "artifacts": [
+    { "type": "eval", "role": "tester", "path": "run_1/tester.md" },
+    { "type": "test-spec", "path": "../../../test/e2e/smoke.spec.ts" },
+    { "type": "test-config", "path": "../../../playwright.config.ts" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  }
+}

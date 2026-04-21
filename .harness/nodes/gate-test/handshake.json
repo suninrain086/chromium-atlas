@@ -1,0 +1,21 @@
+{
+  "nodeId": "gate-test",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Gate-test PASS — 35/35 tests, 0🔴 0 warnings, 18 green across 3 upstream nodes. Bundle main 18.13/30 KB gz, total 240.29/250 KB gz. Mock fixtures stay CI default; --source real opt-in via sync-docs workflow only. Halting per batch instructions; gate-test --PASS--> acceptance left for next batch.",
+  "timestamp": "2026-04-21T22:33:00Z",
+  "artifacts": [
+    {"type":"decision","path":".harness/nodes/gate-test/run_1/decision.md"},
+    {"type":"eval","path":".harness/nodes/gate-test/run_1/eval-synthesis.md"},
+    {"type":"synthesis","path":".harness/nodes/gate-test/run_1/synthesize.json"}
+  ],
+  "findings": {"critical": 0, "warning": 0, "suggestion": 18},
+  "metrics": {
+    "tests_passed": 35,
+    "tests_failed": 0,
+    "main_chunk_gz_bytes": 18564,
+    "total_gz_bytes": 246057
+  }
+}

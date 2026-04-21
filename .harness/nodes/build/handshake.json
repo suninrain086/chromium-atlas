@@ -1,0 +1,35 @@
+{
+  "nodeId": "build",
+  "nodeType": "build",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": null,
+  "summary": "Implemented all 5 v1.0.1 feature blocks per discuss decision: F1 graph view (lazy chunk via dynamic import; cytoscape core only with built-in cose layout — dropped fcose to fit budget; theme restyle via cy.style().fromJson().update()); F2 PWA via vite-plugin-pwa with stale-while-revalidate JSON + autoUpdate SW + install button component; F3 a11y polish (aria-pressed on theme toggle, role=radiogroup + aria-checked + roving tabindex + arrow-key nav on view-mode group, aria-live status region in palette, 44px hit areas via mobile media query); F4 OSS hygiene (SECURITY.md, THIRD-PARTY.md, license:MIT in package.json); F5 persona harness helpers (waitForRoute, waitForPaletteOpen, waitForRender, seedLocalStorage). Bundle: main 17.58 KB gz (≤30 ✅), graph chunk 138.62 KB gz, total 239.71 KB gz (≤250 ✅).",
+  "timestamp": "2026-04-21T20:38:00Z",
+  "artifacts": [
+    { "type": "code", "path": "src/views/graph.ts" },
+    { "type": "code", "path": "src/lib/graph-data.ts" },
+    { "type": "code", "path": "src/components/install-button.ts" },
+    { "type": "code", "path": "src/components/theme-toggle.ts" },
+    { "type": "code", "path": "src/views/folder.ts" },
+    { "type": "code", "path": "src/components/palette.ts" },
+    { "type": "code", "path": "src/components/sidebar.ts" },
+    { "type": "code", "path": "src/main.ts" },
+    { "type": "code", "path": "vite.config.ts" },
+    { "type": "code", "path": "src/styles/app.css" },
+    { "type": "config", "path": "package.json" },
+    { "type": "doc", "path": "SECURITY.md" },
+    { "type": "doc", "path": "THIRD-PARTY.md" },
+    { "type": "script", "path": "scripts/check-budget.mjs" },
+    { "type": "test", "path": "test/e2e/v101.spec.ts" },
+    { "type": "test", "path": "test/e2e-user/_helpers.ts" }
+  ],
+  "findings": null,
+  "metrics": {
+    "main_chunk_gz_bytes": 18000,
+    "graph_chunk_gz_bytes": 141940,
+    "total_gz_bytes": 245463,
+    "main_budget_gz_bytes": 30720,
+    "total_budget_gz_bytes": 256000
+  }
+}

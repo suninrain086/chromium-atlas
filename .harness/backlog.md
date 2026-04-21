@@ -1,0 +1,9 @@
+- [ ] 🔵 [e2e-user/new-user] persona harness Enter timing — add `await page.waitForSelector('.result.is-selected')` before Enter — `test/persona-harness/new-user.mjs:42`
+- [ ] 🔵 [e2e-user/active-user] persona harness must seed localStorage via `page.addInitScript` BEFORE `goto` — `test/persona-harness/active-user.mjs:18`
+- [ ] 🔵 [e2e-user/churned-user] persona harness same seeding race for per-folder mode — `test/persona-harness/churned-user.mjs:31`
+- [ ] 🔵 [e2e-user/new-user] add `title` attr on search icon mirroring onboarding chip — `src/components/onboarding.ts:24`
+- [ ] 🔵 [e2e-user/new-user] guard global `/` listener against `[contenteditable]` — `src/main.ts:118`
+- [ ] 🔵 [e2e-user/active-user] add `aria-pressed` to theme toggle — `src/components/theme-toggle.ts:12`
+- [ ] 🔵 [e2e-user/active-user] wrap view-mode buttons in `role="radiogroup"` — `src/views/folder.ts:21`
+- [ ] 🔵 [e2e-user/churned-user] inline search box on 404 view — `src/views/notfound.ts`
+- [ ] 🔵 [e2e-user/churned-user] `console.warn` on stale-bookmark 404 — `src/router.ts:46`

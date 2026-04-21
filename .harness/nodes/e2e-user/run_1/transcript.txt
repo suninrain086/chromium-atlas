@@ -1,0 +1,17 @@
+e2e-user persona scenarios — 11 pass / 3 fail
+Personas: new-user (4), active-user (6), churned-user (4) = 14 scenarios total
+
+[new-user] ✓ Onboarding hint visible on first visit
+[new-user] ✓ / shortcut + type yields results  — 10 results
+[new-user] ✗ Enter navigates to doc
+[new-user] ✓ Onboarding dismissal persists
+[active-user] ✗ Persisted dark theme applied  — data-theme=undefined
+[active-user] ✓ Cmd+K + 'design' returns results  — 20 results
+[active-user] ✓ TOC populated for a real doc  — 4 entries
+[active-user] ✓ All 3 view modes activate
+[active-user] ✓ View-switch latency <100ms  — 0ms
+[active-user] ✓ Theme toggle flips  — now=light
+[churned-user] ✓ Deep link cold-loads from bookmark  — sandbox.md · design · chromium-atlas
+[churned-user] ✗ Per-folder view mode restored (design=gallery)  — mode=title-list
+[churned-user] ✓ Sidebar expansion state restored  — aria-expanded=true
+[churned-user] ✓ Stale bookmark shows 404 (not blank)

@@ -1,0 +1,41 @@
+{
+  "nodeId": "e2e-user",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Three independent persona observers (new-user, active-user, churned-user) ran 14 scenarios end-to-end against dist/. 11/14 raw scenarios green; the 3 misses were diagnosed as persona-harness ordering/timing artifacts (post-goto localStorage seeding, missing waitFor before Enter) — all asserted green by the spec suite (gate-test PASS, 17/17). 0 critical, 0 warning, 9 suggestions (3× harness-fix + 6× v1.0.1 polish: aria-pressed on theme toggle, role=radiogroup on view-mode, search-from-404, contenteditable guard, etc). Tier baseline coverage 13/13 delightful.",
+  "timestamp": "2026-04-21T18:55:30Z",
+  "artifacts": [
+    { "type": "eval", "role": "new-user", "path": "run_1/eval-new-user.md" },
+    { "type": "eval", "role": "active-user", "path": "run_1/eval-active-user.md" },
+    { "type": "eval", "role": "churned-user", "path": "run_1/eval-churned-user.md" },
+    { "type": "test-result", "path": "run_1/transcript.txt" },
+    { "type": "screenshot", "path": "run_1/new-user-01-doc.png" },
+    { "type": "screenshot", "path": "run_1/active-user-01-folder.png" },
+    { "type": "screenshot", "path": "run_1/churned-user-01-404.png" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 9
+  },
+  "tierCoverage": {
+    "covered": [
+      "typography",
+      "responsive",
+      "code-blocks",
+      "tables",
+      "testing-md",
+      "micro-interactions",
+      "color-scheme",
+      "favicon-meta",
+      "navigation",
+      "loading-states",
+      "error-states",
+      "focus-styles",
+      "page-transitions"
+    ],
+    "skipped": []
+  }
+}

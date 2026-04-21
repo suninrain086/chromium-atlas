@@ -1,0 +1,38 @@
+{
+  "roles": [
+    {
+      "role": "designer",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 2,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 85,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    },
+    {
+      "role": "pm",
+      "critical": 0,
+      "warning": 2,
+      "suggestion": 0,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 80,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    }
+  ],
+  "totals": {
+    "critical": 0,
+    "warning": 2,
+    "suggestion": 2
+  },
+  "verdict": "ITERATE",
+  "reason": "2 warning finding(s)",
+  "tierCoverage": null
+}

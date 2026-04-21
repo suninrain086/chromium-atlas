@@ -12,6 +12,19 @@
       "lowUniqueContent": false,
       "singleHeading": false,
       "findingDensityLow": false
+    },
+    {
+      "role": "ux-reviewer",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 0,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 50,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
     }
   ],
   "totals": {

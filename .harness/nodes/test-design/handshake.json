@@ -4,11 +4,12 @@
   "runId": "run_1",
   "status": "completed",
   "verdict": "PASS",
-  "summary": "Tester designed P0 coverage for AC-1..AC-10 + AC-12 (11 P0 tests + 17 v1.0 regression = 25 cases). AC-11 personas deferred to e2e-user node per v1.0 trace. Spec already implemented at test/e2e/v101.spec.ts; gating order documented (budget script first, then npm test).",
-  "timestamp": "2026-04-21T20:46:00Z",
+  "summary": "Two reviewers (tester + ux-reviewer) PASS. P0 coverage for AC-1..AC-10,12 mapped to test/e2e/v101.spec.ts (8 cases) + 17 v1.0 regression specs = 25 P0 tests. AC-11 persona harness deferred to e2e-user node.",
+  "timestamp": "2026-04-21T20:48:00Z",
   "artifacts": [
     { "type": "evaluation", "path": ".harness/nodes/test-design/run_1/eval-tester.md" },
+    { "type": "evaluation", "path": ".harness/nodes/test-design/run_1/eval-ux-reviewer.md" },
     { "type": "synthesis", "path": ".harness/nodes/test-design/run_1/synthesize.json" }
   ],
-  "findings": { "critical": 0, "warning": 0, "suggestion": 0 }
+  "findings": { "critical": 0, "warning": 0, "suggestion": 4 }
 }

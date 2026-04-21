@@ -12,6 +12,36 @@ import { resolve } from "node:path";
 // ============================================================================
 
 test.describe("AC-9 sync-health indicator", () => {
+  test("narrow viewport (320px) — sync-health does not cause horizontal scroll", async ({ browser }) => {
+    // Regression: post-launch-sim probe in v1.0.2 caught sync-health badge
+    // overflowing page width at 320px when sync-meta.json is present with real data.
+    // Fix: @media (max-width: 480px) collapses .sync-health to max-width:0.
+    const ctx = await browser.newContext({ viewport: { width: 320, height: 800 } });
+    const page = await ctx.newPage();
+    // Force sync-meta to be present with fresh timestamp
+    await page.route("**/sync-meta.json", (route) =>
+      route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          lastSyncedAt: new Date().toISOString(),
+          sourceRef: "main",
+          sha: "abc123def456789abc123def456789abc123def4",
+          docCount: 694,
+          syncDurationMs: 24850,
+        }),
+      })
+    );
+    await page.goto("/");
+    await page.waitForSelector(".sidebar, .skel-sidebar");
+    const overflow = await page.evaluate(() => ({
+      sw: document.documentElement.scrollWidth,
+      cw: document.documentElement.clientWidth,
+    }));
+    // Allow 1px subpixel slack, same as responsive.spec.ts
+    expect(overflow.sw).toBeLessThanOrEqual(overflow.cw + 1);
+    await ctx.close();
+  });
+
   test("hidden when sync-meta.json missing", async ({ page }) => {
     await page.route("**/sync-meta.json", (r) => r.fulfill({ status: 404 }));
     await page.goto("/");

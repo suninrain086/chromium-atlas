@@ -608,9 +608,22 @@ code, pre, .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, 
   color: var(--text-dim, #888);
   padding: 0 8px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
   user-select: none;
   align-self: center;
 }
 .sync-health[hidden] { display: none; }
+@media (max-width: 480px) {
+  .sync-health {
+    /* Narrow viewports: collapse to just the dot/icon to avoid horizontal scroll */
+    max-width: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    /* Screen readers still get the text via aria-live region if present */
+  }
+}
 
 .graph-cy { position: relative; }

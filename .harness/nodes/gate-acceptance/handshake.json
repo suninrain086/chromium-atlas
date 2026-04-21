@@ -1,0 +1,20 @@
+{
+  "nodeId": "gate-acceptance",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "verdict=PASS, next=audit. acceptance run_2 closed all run_1 yellows; mechanical aggregation clean.",
+  "timestamp": "2026-04-21T12:58:27Z",
+  "artifacts": [
+    {
+      "type": "gate-decision",
+      "path": "run_1/decision.md"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 0
+  }
+}

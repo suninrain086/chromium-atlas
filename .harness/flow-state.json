@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "acceptance",
+  "currentNode": "gate-acceptance",
   "entryNode": "discuss",
   "tier": null,
-  "totalSteps": 6,
+  "totalSteps": 7,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -37,6 +37,11 @@
     {
       "nodeId": "acceptance",
       "runId": "run_2",
+      "timestamp": "2026-04-21T12:58:27Z"
+    },
+    {
+      "nodeId": "gate-acceptance",
+      "runId": "run_1",
       "timestamp": "2026-04-21T12:58:27Z"
     }
   ],

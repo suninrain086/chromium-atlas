@@ -1,0 +1,21 @@
+{
+  "nodeId": "test-execute",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "26/26 Playwright tests pass in 16.8s. Composition: 17 v1.0 regression specs (smoke 8, polish 2, responsive 7) + 8 new v1.0.1 specs (AC-1..AC-10 except AC-11 which is e2e-user). Bundle script + in-spec gzip both green: main 17.58 KB gz / 30, total 239.71 KB gz / 250.",
+  "timestamp": "2026-04-21T20:50:00Z",
+  "artifacts": [
+    { "type": "test-output", "path": ".harness/nodes/test-execute/run_1/test-output.txt" }
+  ],
+  "findings": null,
+  "metrics": {
+    "tests_total": 26,
+    "tests_passed": 26,
+    "tests_failed": 0,
+    "duration_ms": 16800,
+    "main_chunk_gz_bytes": 18432,
+    "total_gz_bytes": 245463
+  }
+}

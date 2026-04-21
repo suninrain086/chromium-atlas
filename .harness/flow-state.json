@@ -1,17 +1,23 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "discuss",
+  "currentNode": "e2e-user",
   "entryNode": "discuss",
   "tier": null,
-  "totalSteps": 0,
+  "totalSteps": 1,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
-  "history": [],
+  "history": [
+    {
+      "nodeId": "e2e-user",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T14:55:08Z"
+    }
+  ],
   "edgeCounts": {},
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T14:19:18.348Z",
+  "_last_modified": "2026-04-21T14:55:08Z",
   "_write_nonce": "5ec044cfd27ec3b1"
 }

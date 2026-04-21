@@ -1,0 +1,12 @@
+e2e-user run_1 — v1.0.2 personas
+============================================================
+
+Playwright suite replay: 34/35 pass
+
+
+**Orchestrator-verified live sync** (2026-04-21):
+- Cold clone: 29.8s
+- 694 real chromium docs from refs/heads/main
+- sha 03514af618d7a6b9ecce7efda0bc9f02ac1922b4
+- sync-meta.json valid; cache 170 MB total (within revised AC-2 <200 MB)
+

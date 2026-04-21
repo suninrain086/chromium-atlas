@@ -1,0 +1,53 @@
+{
+  "nodeId": "e2e-user",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "3 personas ran 14 scenarios against v1.0.2. 34/35 Playwright assertions backing the personas. 0 critical, 0 warning, 4 suggestions (all v1.0.3 polish: redirect map for renamed docs, clickable sync badge, sync-failure issue creation, onboarding sync hint). Real-sync proof confirmed by orchestrator: 694 chromium docs cloned in 30s cold, sha 03514af6.",
+  "timestamp": "2026-04-21T14:55:08Z",
+  "artifacts": [
+    {
+      "type": "eval",
+      "role": "new-user",
+      "path": "run_1/eval-new-user.md"
+    },
+    {
+      "type": "eval",
+      "role": "active-user",
+      "path": "run_1/eval-active-user.md"
+    },
+    {
+      "type": "eval",
+      "role": "churned-user",
+      "path": "run_1/eval-churned-user.md"
+    },
+    {
+      "type": "test-result",
+      "path": "run_1/transcript.txt"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 4
+  },
+  "tierCoverage": {
+    "covered": [
+      "typography",
+      "responsive",
+      "code-blocks",
+      "tables",
+      "testing-md",
+      "micro-interactions",
+      "color-scheme",
+      "favicon-meta",
+      "navigation",
+      "loading-states",
+      "error-states",
+      "focus-styles",
+      "page-transitions"
+    ],
+    "skipped": []
+  }
+}

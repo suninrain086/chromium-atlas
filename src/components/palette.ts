@@ -81,6 +81,9 @@ export function openPalette() {
     } else if (e.key === "Escape") {
       e.preventDefault();
       closePalette();
+    } else if (e.key === "Tab") {
+      // Focus trap: only one focusable element in the dialog (the input itself)
+      e.preventDefault();
     }
   });
 

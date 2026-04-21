@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "build",
+  "currentNode": "code-review",
   "entryNode": "discuss",
   "tier": "delightful",
-  "totalSteps": 1,
+  "totalSteps": 2,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -13,13 +13,19 @@
       "nodeId": "build",
       "runId": "run_1",
       "timestamp": "2026-04-21T09:13:16.537Z"
+    },
+    {
+      "nodeId": "code-review",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T09:39:40.181Z"
     }
   ],
   "edgeCounts": {
-    "discuss→build": 1
+    "discuss→build": 1,
+    "build→code-review": 1
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T09:13:16.537Z",
+  "_last_modified": "2026-04-21T09:39:40.181Z",
   "_write_nonce": "cd7a08858d14868d"
 }

@@ -117,7 +117,9 @@ export function renderDoc(docPath: string, body: string): string {
   const clean = DOMPurify.sanitize(dirty, {
     ADD_ATTR: ["target", "rel", "id", "data-doc"],
     FORBID_TAGS: ["style", "iframe", "object", "embed"],
-    FORBID_ATTR: ["onerror", "onload", "onclick"],
+    // Note: DOMPurify's default config strips ALL on* event handlers
+    // (onerror, onload, onclick, onmouseover, onfocus, ...). We rely on
+    // that default rather than maintaining an incomplete denylist.
   });
   renderCache.set(key, clean);
   if (renderCache.size > RENDER_CACHE_LIMIT) {

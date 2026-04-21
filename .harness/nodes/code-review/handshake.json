@@ -1,0 +1,20 @@
+{
+  "nodeId": "code-review",
+  "nodeType": "review",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Three independent reviewers (architect, frontend, security) raised 5 warnings, 0 critical. Engineer closed F1 (palette focus trap, src/components/palette.ts:84-87), F2 (`/` shortcut + isEditableTarget helper, src/main.ts:13-19,161-164), S1 (removed misleading FORBID_ATTR denylist, src/lib/markdown.ts:117-123). A1, A2, F7, S4 acknowledged as suggestions deferred to audit/polish nodes per reviewers' own option-A recommendations. Build still green (16.44 kB gzip main chunk).",
+  "timestamp": "2026-04-21T17:55:00Z",
+  "artifacts": [
+    { "type": "eval", "role": "architect", "path": "run_1/architect.md" },
+    { "type": "eval", "role": "frontend", "path": "run_1/frontend.md" },
+    { "type": "eval", "role": "security", "path": "run_1/security.md" },
+    { "type": "eval", "role": "engineer", "path": "run_1/engineer-response.md" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 4
+  }
+}

@@ -11,6 +11,13 @@ import { ancestorFolders, parentFolder } from "./lib/paths";
 
 const app = document.getElementById("app") as HTMLElement;
 
+function isEditableTarget(t: EventTarget | null): boolean {
+  if (!t || !(t instanceof HTMLElement)) return false;
+  if (t.isContentEditable) return true;
+  const tag = t.tagName;
+  return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT";
+}
+
 function renderShell() {
   app.innerHTML = `
     <aside class="sidebar"></aside>
@@ -150,11 +157,14 @@ async function boot() {
 
   startRouter();
 
-  // Cmd/Ctrl+K palette
+  // Cmd/Ctrl+K palette + `/` shortcut
   window.addEventListener("keydown", (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
       e.preventDefault();
       if (isPaletteOpen()) closePalette(); else openPalette();
+    } else if (e.key === "/" && !isPaletteOpen() && !isEditableTarget(e.target)) {
+      e.preventDefault();
+      openPalette();
     } else if (e.key === "Escape" && isDrawerOpen()) {
       setDrawerOpen(false);
     }

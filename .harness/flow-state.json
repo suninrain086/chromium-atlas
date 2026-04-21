@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "e2e-user",
+  "currentNode": "post-launch-sim",
   "entryNode": "discuss",
   "tier": "delightful",
-  "totalSteps": 10,
+  "totalSteps": 12,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -58,6 +58,16 @@
       "nodeId": "e2e-user",
       "runId": "run_1",
       "timestamp": "2026-04-21T10:50:05.013Z"
+    },
+    {
+      "nodeId": "gate-e2e",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T11:05:33.694Z"
+    },
+    {
+      "nodeId": "post-launch-sim",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T11:05:59.223Z"
     }
   ],
   "edgeCounts": {
@@ -70,10 +80,12 @@
     "acceptance→gate-acceptance": 1,
     "gate-acceptance→audit": 1,
     "audit→gate-audit": 1,
-    "gate-audit→e2e-user": 1
+    "gate-audit→e2e-user": 1,
+    "e2e-user→gate-e2e": 1,
+    "gate-e2e→post-launch-sim": 1
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T10:50:05.013Z",
+  "_last_modified": "2026-04-21T11:05:59.223Z",
   "_write_nonce": "cd7a08858d14868d"
 }

@@ -1,0 +1,56 @@
+{
+  "roles": [
+    {
+      "role": "active-user",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 3,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 92,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    },
+    {
+      "role": "churned-user",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 3,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 84,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    },
+    {
+      "role": "new-user",
+      "critical": 0,
+      "warning": 0,
+      "suggestion": 3,
+      "blocked": false,
+      "thinEval": false,
+      "noCodeRefs": false,
+      "lineCount": 83,
+      "lowUniqueContent": false,
+      "singleHeading": false,
+      "findingDensityLow": false
+    }
+  ],
+  "totals": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 9
+  },
+  "verdict": "PASS",
+  "reason": "all roles LGTM or suggestions only",
+  "tierCoverage": {
+    "tier": "delightful",
+    "covered": 13,
+    "uncovered": 0,
+    "uncoveredItems": []
+  }
+}

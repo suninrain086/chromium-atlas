@@ -1,0 +1,11 @@
+{
+  "nodeId": "gate-e2e",
+  "nodeType": "gate",
+  "runId": "run_2",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "verdict=PASS, next=post-launch-sim",
+  "timestamp": "2026-04-21T11:05:59.223Z",
+  "artifacts": [],
+  "findings": null
+}

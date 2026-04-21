@@ -1,0 +1,4 @@
+e2e-user run_1 — 3-persona walkthrough
+============================================================
+
+Replay of full Playwright suite (regression + v1.0.1 ACs): 26 passed, 0 failed in 14.9s

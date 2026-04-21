@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "gate-audit",
+  "currentNode": "e2e-user",
   "entryNode": "discuss",
   "tier": null,
-  "totalSteps": 9,
+  "totalSteps": 10,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -53,6 +53,11 @@
       "nodeId": "gate-audit",
       "runId": "run_1",
       "timestamp": "2026-04-21T12:59:38Z"
+    },
+    {
+      "nodeId": "e2e-user",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T13:01:34Z"
     }
   ],
   "edgeCounts": {
@@ -64,6 +69,6 @@
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T12:59:38Z",
+  "_last_modified": "2026-04-21T13:01:34Z",
   "_write_nonce": "567b15c0874691fa"
 }

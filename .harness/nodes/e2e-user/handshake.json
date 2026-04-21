@@ -1,0 +1,53 @@
+{
+  "nodeId": "e2e-user",
+  "nodeType": "execute",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Three independent persona observers (new-user, active-user, churned-user) ran 14 scenarios against v1.0.1 dist/. 26/26 Playwright assertions backing the personas (v1.0 regression 17 + v1.0.1 ACs 9 = 26). 0 critical, 0 warning, 2 suggestions (graph click-tip overlay, SW-update toast). All 14 raw scenarios green this cycle (vs 11/14 in v1.0 cycle \u2014 persona-harness fixes F5 worked).",
+  "timestamp": "2026-04-21T13:01:34Z",
+  "artifacts": [
+    {
+      "type": "eval",
+      "role": "new-user",
+      "path": "run_1/eval-new-user.md"
+    },
+    {
+      "type": "eval",
+      "role": "active-user",
+      "path": "run_1/eval-active-user.md"
+    },
+    {
+      "type": "eval",
+      "role": "churned-user",
+      "path": "run_1/eval-churned-user.md"
+    },
+    {
+      "type": "test-result",
+      "path": "run_1/transcript.txt"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 2
+  },
+  "tierCoverage": {
+    "covered": [
+      "typography",
+      "responsive",
+      "code-blocks",
+      "tables",
+      "testing-md",
+      "micro-interactions",
+      "color-scheme",
+      "favicon-meta",
+      "navigation",
+      "loading-states",
+      "error-states",
+      "focus-styles",
+      "page-transitions"
+    ],
+    "skipped": []
+  }
+}

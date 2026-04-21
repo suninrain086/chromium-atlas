@@ -1,11 +1,9 @@
 node_modules/
 dist/
-.DS_Store
-*.log
-.env
-.env.local
-.vite/
+test/report/
 test-results/
 playwright-report/
-.harness/
-BLOCKED.md
+public/docs.json
+public/tree.json
+public/links.json
+.DS_Store

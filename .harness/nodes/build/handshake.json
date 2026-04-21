@@ -1,0 +1,40 @@
+{
+  "nodeId": "build",
+  "nodeType": "build",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Full v1.0 SPA scaffold per discuss/decision.md: deterministic scanner over 94-doc fixture, hash router, store, sidebar tree, three-mode folder view, doc view with TOC + back-links, Cmd+K palette, theme toggle, sanitized markdown pipeline. tsc clean. Vite build emits 102 modules, main chunk 16.36 kB gzipped (cap 200 kB). Graph view + PWA + Playwright deferred to later nodes per OPC topology.",
+  "timestamp": "2026-04-21T17:50:00Z",
+  "artifacts": [
+    { "type": "eval", "role": "engineer", "path": "run_1/engineer.md" },
+    { "type": "cli-output", "path": "run_1/build-log.txt" }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 3
+  },
+  "tierCoverage": {
+    "covered": [
+      "folder-tree-sidebar",
+      "three-view-modes",
+      "search-palette",
+      "theme-toggle",
+      "doc-detail",
+      "toc",
+      "back-links",
+      "permalink-routing",
+      "markdown-render",
+      "code-highlight",
+      "xss-sanitize",
+      "code-split",
+      "deterministic-scanner"
+    ],
+    "skipped": [
+      { "key": "graph-view", "reason": "stub for v1.0; full impl deferred to acceptance per discuss" },
+      { "key": "pwa-offline", "reason": "deferred to acceptance" },
+      { "key": "playwright-tests", "reason": "owned by test-design / test-execute nodes" }
+    ]
+  }
+}

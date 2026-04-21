@@ -1,0 +1,60 @@
+/* === Design tokens (Linear-inspired). Switch via [data-theme="dark|light"]. === */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #08090a;
+  --panel: #0f1011;
+  --surface: #191a1b;
+  --surface-2: #28282c;
+  --text: #f7f8f8;
+  --text-2: #d0d6e0;
+  --text-3: #8a8f98;
+  --text-4: #62666d;
+  --accent: #7170ff;
+  --accent-strong: #5e6ad2;
+  --accent-hover: #828fff;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-solid: #23252a;
+  --surface-translucent: rgba(255, 255, 255, 0.02);
+  --surface-translucent-2: rgba(255, 255, 255, 0.04);
+  --surface-translucent-3: rgba(255, 255, 255, 0.06);
+  --ok: #10b981;
+  --shadow-popover:
+    rgba(0, 0, 0, 0.4) 0 8px 24px,
+    rgba(0, 0, 0, 0.3) 0 2px 6px,
+    rgba(0, 0, 0, 0.5) 0 0 0 1px;
+  --overlay: rgba(0, 0, 0, 0.78);
+  --code-bg: #0b0d10;
+  --code-text: #d0d6e0;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f8f8;
+  --panel: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f3f4f5;
+  --text: #08090a;
+  --text-2: #2d3036;
+  --text-3: #5b626c;
+  --text-4: #8a8f98;
+  --accent: #5e6ad2;
+  --accent-strong: #5e6ad2;
+  --accent-hover: #4954c1;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(0, 0, 0, 0.05);
+  --border-solid: #d0d6e0;
+  --surface-translucent: rgba(0, 0, 0, 0.015);
+  --surface-translucent-2: rgba(0, 0, 0, 0.03);
+  --surface-translucent-3: rgba(0, 0, 0, 0.05);
+  --ok: #10b981;
+  --shadow-popover:
+    rgba(0, 0, 0, 0.12) 0 12px 32px,
+    rgba(0, 0, 0, 0.08) 0 2px 6px,
+    rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  --overlay: rgba(20, 22, 28, 0.42);
+  --code-bg: #f3f4f5;
+  --code-text: #2d3036;
+}

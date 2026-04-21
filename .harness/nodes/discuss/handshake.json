@@ -1,0 +1,15 @@
+{
+  "nodeId": "discuss",
+  "nodeType": "discussion",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": null,
+  "summary": "Three-role discussion (architect, engineer, tester) ran in parallel for round 1; rounds 2-3 collapsed into a single decision.md to preserve the 6h wall-clock budget. Plans converged with no contradictions on stack (Vite+TS, md-it+DOMPurify, Fuse, hljs core), module layout, deterministic scanner contract, and Playwright test mapping. Implementer-ready plan written to run_1/decision.md.",
+  "timestamp": "2026-04-21T17:45:00+08:00",
+  "artifacts": [
+    { "type": "transcript", "path": ".harness/nodes/discuss/run_1/round-1-architect.md" },
+    { "type": "transcript", "path": ".harness/nodes/discuss/run_1/round-1-engineer.md" },
+    { "type": "transcript", "path": ".harness/nodes/discuss/run_1/round-1-tester.md" },
+    { "type": "decision", "path": ".harness/nodes/discuss/run_1/decision.md" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "nodeId": "gate-test",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "verdict=PASS, next=acceptance. 0🔴 0🟡 16🟢 across upstream nodes. 26/26 tests green; bundles within budget (main 17.58/30 KB gz, total 239.71/250 KB gz).",
+  "timestamp": "2026-04-21T20:51:00Z",
+  "artifacts": [
+    { "type": "decision", "path": ".harness/nodes/gate-test/run_1/decision.md" }
+  ],
+  "findings": { "critical": 0, "warning": 0, "suggestion": 16 }
+}

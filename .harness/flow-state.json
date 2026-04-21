@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "flowTemplate": "full-stack",
-  "currentNode": "gate-acceptance",
+  "currentNode": "gate-audit",
   "entryNode": "discuss",
   "tier": "delightful",
-  "totalSteps": 7,
+  "totalSteps": 9,
   "maxTotalSteps": 35,
   "maxLoopsPerEdge": 3,
   "maxNodeReentry": 5,
@@ -43,6 +43,16 @@
       "nodeId": "gate-acceptance",
       "runId": "run_1",
       "timestamp": "2026-04-21T10:46:59.641Z"
+    },
+    {
+      "nodeId": "audit",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T10:47:24.370Z"
+    },
+    {
+      "nodeId": "gate-audit",
+      "runId": "run_1",
+      "timestamp": "2026-04-21T10:49:45.909Z"
     }
   ],
   "edgeCounts": {
@@ -52,10 +62,12 @@
     "test-design→test-execute": 1,
     "test-execute→gate-test": 1,
     "gate-test→acceptance": 1,
-    "acceptance→gate-acceptance": 1
+    "acceptance→gate-acceptance": 1,
+    "gate-acceptance→audit": 1,
+    "audit→gate-audit": 1
   },
   "bypassMode": null,
   "_written_by": "opc-harness",
-  "_last_modified": "2026-04-21T10:46:59.641Z",
+  "_last_modified": "2026-04-21T10:49:45.909Z",
   "_write_nonce": "cd7a08858d14868d"
 }

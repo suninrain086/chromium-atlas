@@ -1,0 +1,20 @@
+{
+  "nodeId": "gate-final",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "Final gate aggregating 12 upstream nodes: 0 critical, 0 warning, 36 suggestion. v1.0.1 ships: graph view (lazy cyto), PWA (workbox autoUpdate), a11y polish (aria-pressed/radiogroup/44px), OSS hygiene (SECURITY/THIRD-PARTY/license), persona helpers (14/14 raw). 26/26 Playwright green. Bundle main 17.66/30 KB gz (41% headroom), total 225.88/250 KB (10% headroom).",
+  "timestamp": "2026-04-21T13:03:34Z",
+  "artifacts": [
+    {
+      "type": "gate-decision",
+      "path": "run_1/decision.md"
+    }
+  ],
+  "findings": {
+    "critical": 0,
+    "warning": 0,
+    "suggestion": 36
+  }
+}

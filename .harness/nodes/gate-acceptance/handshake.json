@@ -1,0 +1,13 @@
+{
+  "nodeId": "gate-acceptance",
+  "nodeType": "gate",
+  "runId": "run_1",
+  "status": "completed",
+  "verdict": "PASS",
+  "summary": "gate-acceptance PASS — acceptance run_2 clean (0 critical, 0 warning) after run_1 ITERATE was closed by patch 4a0a204. 12/12 ACs green vs revised brief; bundle 18.13/30 KB main, 240.29/250 KB total; 35/35 tests. Next: audit.",
+  "timestamp": "2026-04-21T22:51:00Z",
+  "artifacts": [
+    {"type": "gate-decision", "path": ".harness/nodes/gate-acceptance/run_1/decision.md"}
+  ],
+  "findings": {"critical": 0, "warning": 0, "suggestion": 0}
+}
